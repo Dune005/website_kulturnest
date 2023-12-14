@@ -1,0 +1,153 @@
+:root {
+    background-color: black;
+    --beige: rgba(255,210,153,1);
+    }
+    
+    *{
+        font-family: 'Lato', sans-serif;
+        font-weight:500;
+        font-size:16px;
+        color:white;
+      
+        text-decoration:none;
+      }
+    
+      html{ /*NICHT ANPASSEN!*/
+        height:auto;
+        margin-left: 15%;
+        margin-right: 15%;
+      }
+    
+      header{ /*NICHT ANPASSEN!*/
+        width:100%;
+        height: 250px;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        /*
+        background-image: url('/img/voegel/vogel_weiss.svg');
+        background-repeat: no-repeat;
+        background-position: 0% 5%;
+        background-size: 20%; */
+      }
+    
+      main{
+        width:100%;
+        height: 100%;
+        margin-top: 80px;
+        margin-bottom: 100px;
+      }
+    
+      .logo{ /*NICHT ANPASSEN!*/
+        width: 400px;
+        height: auto;
+        padding-top: 20px;
+        margin: 0 auto;
+        display: block;    
+      }
+    
+      .nav_links{ /*NICHT ANPASSEN!*/
+        display:flex;
+        flex-wrap: wrap;
+        list-style:none;
+        padding: 0;
+        justify-content: center;
+      }
+    
+      .nav_links li a{ /*NICHT ANPASSEN!*/
+        display: block;
+        box-sizing:border-box;
+        height:40px;
+        padding: 10px 15px 0px 15px;
+      }
+    
+      .aktiver_menuelink{ /*NICHT ANPASSEN!*/
+        color:var(--beige);
+        transition: color 0.3s;
+      }
+    
+      .nav_links li a:hover, .aktiver_menuelink{ /*NICHT ANPASSEN!*/
+        color:var(--beige);
+        border-bottom-style: solid;
+        border-bottom-width: 2px;
+      }
+    
+      h1{ /*NICHT ANPASSEN!*/
+        font-size: 60px;
+        font-weight: 800;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+    
+      h2{
+        font-size: 20px;
+        font-weight: 700;
+        text-align: left;
+        margin-top: 0px;
+        margin-bottom: 50px;
+      }
+    
+      p{
+        font-size: 14px;
+        font-weight: 300;
+        text-align: left;
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+    
+      .einleitung {
+        display: flex;
+        flex-direction: row; /* Ändert die Anordnung der Elemente in eine Spalte */
+        align-items: flex-start; /* Linksbündige Ausrichtung der Elemente */
+      }
+    
+      #einleitung_text{
+        flex: 1;
+        margin-right: 50px;
+      }
+    
+      #einleitung_bild {
+        flex: unset; /* Auf 'unset' setzen, um das vorherige Flex-Verhalten aufzuheben */
+        margin-left: 50px; /* Abstand zwischen p und Bild */
+      }
+    
+      /*Footerbereich*/
+      footer {
+         display: flex;
+         width: 100%;
+         background-color: var(--blue);
+         color: white;
+         text-align: left;
+         font-size: 10px;
+         padding-top:10px;
+         padding-bottom:10px;
+         margin-top:10px;
+         border-top: 1px solid #ffffff; /* Dünne Linie mit der gewünschten Farbe (hier: #333) */
+         padding-bottom: 5px; /* Platz unterhalb der Linie */
+         margin-top: 40px;
+      }
+    
+      .adresse_footer{ /*NICHT ANPASSEN!*/
+        flex: 2;
+        font-size: 14px;
+      }
+    
+    
+      .weitere_links{ /*NICHT ANPASSEN!*/
+        flex: 3;
+        font-size: 14px;
+        text-align: left;
+        margin-top: 29px;
+      }
+    
+      .social_media_icons{ /*NICHT ANPASSEN!*/
+        flex: 2;
+        font-size: 10px;
+        margin-top: 20px;
+      }
+    
+      .social_media_icons img{ /*NICHT ANPASSEN!*/
+        width: 30px;
+      }
+    
