@@ -37,13 +37,28 @@
 <main>
 
     <div class="header-section">
-        <h1>Wenn Kultur erleben einfacher ist
-            als dein Lieblingslied mitzusummen.</h1>
+        <h1>Wenn Kultur erleben <br> einfacher ist <br>
+            als dein Lieblingslied <br> mitzusummen.</h1>
             
             <div class="button_container">
-                <button class="button_header">Klick mich</button>
+                <a href="/angebote.html" class="button_header">Start jetzt dein kulturelles Abenteuer!</a>
             </div>
    </div>
+
+
+<article class="angebote_teaser">
+    <div class="ausflüge">
+        <img id="ausflüge_bild" src="/img/bilder_homepage/ausfluege.png" alt="Bild einer Stadtfürung">
+    </div>
+    <div class="interaktive_erlebnisse">
+        <img id="interaktive_erlebnisse_bild" src="/img/bilder_homepage/interaktiv.png" alt="Bild einer Stadtfürung">
+    </div>
+    <div class="community_events">
+        <img id="community_events_bild" src="/img/bilder_homepage/community_events.png" alt="Bild einer Stadtfürung">
+    </div>
+
+</article>
+
 
 
    <article class="article-container">
@@ -58,11 +73,39 @@
 
     <div class="zugang">
         <div>
+            <img id="zugang_bild" src="/img/bilder_homepage/ausstellung.jpg" alt="">
+        </div>
+        <div>
             <h2>Einfacher Zugang zur Kulturwelt</h2>
             <p id="zugang_text">"Unsere Plattform bietet dir eine übersichtliche Kartenansicht aller heutigen und wöchentlichen Events. Aber das ist noch nicht alles! Mit unserem monatlichen Veranstaltungs-Bingo kannst du neue Orte entdecken, dich mit Menschen unterschiedlicher Alters- und Interessensgruppen austauschen und ein vielfältiges Kulturnetzwerk aufbauen."</p>
         </div>
-      <img id="zugang_bild" src="/img/bilder_homepage/ausstellung.jpg" alt="">
+
     </div>
+
+    </div>
+    
+    <script>
+        // JavaScript, um die Reihenfolge je nach Bildschirmbreite zu ändern
+        const zugangContainer = document.querySelector('.zugang');
+        const zugangBild = document.getElementById('zugang_bild');
+        const zugangText = document.getElementById('zugang_text');
+    
+        function updateOrder() {
+            if (window.innerWidth >= 1200) {
+                if (zugangBild.nextElementSibling !== zugangText) {
+                    zugangContainer.insertBefore(zugangBild, zugangText);
+                }
+            } else {
+                if (zugangBild.previousElementSibling !== zugangText) {
+                    zugangContainer.insertBefore(zugangText, zugangBild);
+                }
+            }
+        }
+    
+        // Initial aufrufen und bei Änderungen der Bildschirmbreite aktualisieren
+        updateOrder();
+        window.addEventListener('resize', updateOrder);
+    </script>
 
     <div class="bingo">
         <div>
@@ -73,7 +116,7 @@
     </div>
 
     <div class="kulturnest-card">
-        <div>
+        <div id="card_text">
             <h2>Exklusive Angebote nur für Dich!</h2>
             <p>Unsere Specials und Promotions bieten Dir einzigartige Erlebnisse und besondere Vorteile. Lass Dich überraschen und erlebe Kultur auf einem ganz neuen Level.</p>
         </div>

@@ -5,7 +5,7 @@ background-color: black;
 
 *{
     font-family: 'Lato', sans-serif;
-    font-weight:500;
+    font-weight:400;
     font-size:16px;
     color:white;
   
@@ -14,8 +14,8 @@ background-color: black;
 
   html{ /*NICHT ANPASSEN!*/
     height:auto;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 20vw;
+    margin-right: 20vw;
     background-image: url('/img/voegel/vogel_weiss_transparent.png');
     background-size: contain; /* Das Bild wird gestreckt, um den gesamten Bildschirm zu bedecken */
     background-repeat: no-repeat; /* Das Bild wird nicht wiederholt */
@@ -24,7 +24,7 @@ background-color: black;
 
   header{ /*NICHT ANPASSEN!*/
     width:100%;
-    height: 320px;
+    height: 280px;
     top: 0;
     left: 0;
     z-index: 100;
@@ -45,7 +45,7 @@ background-color: black;
   }
 
   .logo{ /*NICHT ANPASSEN!*/
-    width: 600px;
+    width: 500px;
     height: auto;
     padding-top: 20px;
     margin: 0 auto;
@@ -83,48 +83,100 @@ background-color: black;
     font-weight: 800;
     text-align: center;
     margin-top: 50px;
-    margin-bottom: 00px;
+    margin-bottom: 0px;
   }
 
   h2{
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 800;
     text-align: left;
     margin-top: 0px;
     margin-bottom: 0px;
   }
 
   p{
-    font-size: 14px;
-    font-weight: 300;
+    font-size: 16px;
+    font-weight: 400;
     text-align: left;
     margin-top: 10px;
     margin-bottom: 30px;
   }
 
-  .gleichgesinnte, .zugang, .bingo{
+
+
+
+.angebote_teaser{
+    display: flex;
+    flex-direction: row; /* Ändert die Anordnung der Elemente in eine Zeile */
+    align-items: flex-start; /* Linksbündige Ausrichtung der Elemente */
+    margin-bottom: 150px;
+  }
+
+  #ausflüge_bild,
+  #interaktive_erlebnisse_bild,
+  #community_events_bild {
+    width: 200px; /* Die Breite der Bilder */
+    height: auto; /* Die Höhe automatisch anpassen, um das Seitenverhältnis beizubehalten */
+  }
+
+  .gleichgesinnte, .bingo{
     display: flex;
     flex-direction: row; /* Ändert die Anordnung der Elemente in eine Spalte */
     align-items: flex-start; /* Linksbündige Ausrichtung der Elemente */
-    margin-bottom: 50px;
+    margin-bottom: 150px;
   }
 
-  #gleichgesinnte_text, #zugang_text, #bingo_artikel_text{
+  #gleichgesinnte_text, #bingo_artikel_text{
     flex: 1;
     margin-right: 50px;
   }
 
-  #gleichgesinnte_bild, #zugang_bild, #bingo_artikel_bild {
+  #gleichgesinnte_bild, #bingo_artikel_bild {
     flex: unset; /* Auf 'unset' setzen, um das vorherige Flex-Verhalten aufzuheben */
     margin-left: 50px; /* Abstand zwischen p und Bild */
-    width: 200px;
+    width: 400px;
     border-radius: 10px;
     /*box-shadow: rgba(255, 255, 255, 0.446) 10px 15px 25px, rgb(255, 255, 255, 0.15) 10px 5px 10px;*/
 
   }
 
+  .zugang {
+    display: flex;
+    flex-direction: row; /* Ändert die Anordnung der Elemente in eine Zeile */
+    align-items: flex-start; /* Linksbündige Ausrichtung der Elemente */
+    margin-bottom: 150px;
+}
+
+#zugang_bild {
+    flex: unset; /* Auf 'unset' setzen, um das vorherige Flex-Verhalten aufzuheben */
+    margin-right: 20px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+#zugang_bild img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#zugang_text {
+    flex: 1;
+}
+
+#zugang_text h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#zugang_text p {
+    font-size: 16px;
+}
+
+
   .kulturnest-card {
     display: flex;
+    align-items: center;
     background-color: var(--beige); /* Hintergrundfarbe in Beige */
     max-width: 600px;
     height: auto;
@@ -174,6 +226,7 @@ background-color: black;
     background-color: transparent; /* Hintergrundfarbe des Textes auf transparent setzen */
     position: relative; /* Position relativ setzen */
     z-index: 1; /* Über dem Overlay platzieren */
+    margin-right: 50px;
   }
   
 
@@ -312,3 +365,36 @@ background-color: black;
   .social_media_icons img{ /*NICHT ANPASSEN!*/
     width: 30px;
   }
+
+
+
+
+
+
+
+  @media (max-width: 1200px) {
+    .gleichgesinnte,
+    .zugang,
+    .bingo {
+      flex-direction: column; /* Ändert die Anordnung der Elemente in eine Spalte */
+      align-items: flex-start; /* Linksbündige Ausrichtung der Elemente */
+      margin-bottom: 150px;
+    }
+
+
+    .zugang {
+      flex-direction: column-reverse; /* Ändert die Anordnung der Elemente in eine Spalte und kehrt die Reihenfolge um */
+      align-items: flex-start; /* Linksbündige Ausrichtung der Elemente */
+      margin-bottom: 150px;
+    }
+    
+    #zugang_text {
+      order: 2; /* Ändert die Reihenfolge des Textes auf 2 (nach dem Bild) */
+    }
+    
+    #zugang_bild {
+      order: 1; /* Ändert die Reihenfolge des Bildes auf 1 (vor dem Text) */
+    }
+  }
+
+
