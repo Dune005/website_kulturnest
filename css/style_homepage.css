@@ -24,7 +24,7 @@ background-color: black;
 
   header{ /*NICHT ANPASSEN!*/
     width:100%;
-    height: 250px;
+    height: 320px;
     top: 0;
     left: 0;
     z-index: 100;
@@ -45,7 +45,7 @@ background-color: black;
   }
 
   .logo{ /*NICHT ANPASSEN!*/
-    width: 400px;
+    width: 600px;
     height: auto;
     padding-top: 20px;
     margin: 0 auto;
@@ -123,15 +123,64 @@ background-color: black;
 
   }
 
-  .kulturnest-card{
+  .kulturnest-card {
     display: flex;
-    background-color: var(--beige); /* Verwenden Sie den gewünschten Farbnamen oder Farbcode */
-    max-width: 600px; /* Legen Sie die maximale Breite der grauen Fläche fest */
-    margin: 0 auto; /* Zentrieren Sie die graue Fläche auf der Seite */  
+    background-color: var(--beige); /* Hintergrundfarbe in Beige */
+    max-width: 600px;
+    height: auto;
+    margin: 0 auto;
     margin-bottom: 50px;
     padding: 40px;
     border-radius: 10px;
+    position: relative; /* Position relativ setzen */
+    transition: background-color 0.3s; /* Fügt eine sanfte Übergangsanimation hinzu */
   }
+  
+  /* Pseudo-Element für das Overlay beim Hovern */
+  .kulturnest-card {
+    display: flex;
+    background-color: var(--beige); /* Hintergrundfarbe in Beige */
+    max-width: 600px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding: 40px;
+    border-radius: 10px;
+    position: relative; /* Position relativ setzen */
+    overflow: hidden; /* Überlauf ausblenden, um die Farbe beim Hovern zu verstecken */
+    transition: background-color 0.3s; /* Fügt eine sanfte Übergangsanimation hinzu */
+  }
+  
+  /* Pseudo-Element für das Overlay beim Hovern */
+  .kulturnest-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(230, 107, 0, 0.3); /* Halbtransparente Overlay-Farbe */
+    border-radius: 10px;
+    opacity: 0; /* Standardmäßig unsichtbar */
+    transition: opacity 0.3s; /* Übergang für die Opazität hinzufügen */
+  }
+  
+  .kulturnest-card:hover::before {
+    opacity: 1; /* Overlay beim Hovern sichtbar machen */
+  }
+  
+  #card_text {
+    color: #000000; /* Textfarbe auf Schwarz setzen */
+    background-color: transparent; /* Hintergrundfarbe des Textes auf transparent setzen */
+    position: relative; /* Position relativ setzen */
+    z-index: 1; /* Über dem Overlay platzieren */
+  }
+  
+
+  .kulturnest-card h2, .kulturnest-card p{
+    color: black;
+  }
+
 
   /*Button*/
 
@@ -141,6 +190,7 @@ background-color: black;
     align-items: center; /* Zentriert den Inhalt vertikal */
     height: 10vw; /* 100% der Bildschirmhöhe */
     margin-bottom: 40px;
+    
   }
   
   .button_header {
