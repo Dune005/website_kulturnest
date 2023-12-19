@@ -11,6 +11,31 @@
 
     <link rel="stylesheet" href="css/style_homepage.css">
 
+    <link rel="stylesheet" type="text/css" href="https://416577-4.web.fhgr.ch/cookieconsent/cookieconsent.min.css" />
+    <script src="https://416577-4.web.fhgr.ch/cookieconsent/cookieconsent.min.js"></script>
+    <script>
+        window.addEventListener("load", function(){
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": {
+                        "background": "#edeff5",
+                        "text": "#838391"
+                    },
+                    "button": {
+                        "background": "#4b81e8"
+                    }
+                },
+                "theme": "edgeless",
+                "content": {
+                    "message": "Wir verwenden Cookies auf der Website, um Ihren Besuch effizienter zu machen und Ihnen Benutzerfreundlichkeit bieten zu können.",
+                    "dismiss": "OK",
+                    "link": "Informationen",
+                    "href": "https://ekiwi.de/datenschutzerklaerung.htm"
+                }
+            })});
+    </script>
+
+
 </head>
 
 
@@ -37,8 +62,14 @@
 <main>
 
     <div class="header-section">
-        <h1>Wenn Kultur erleben <br> einfacher ist <br>
-            als dein Lieblingslied <br> mitzusummen.</h1>
+        <h1>Wenn Kultur erleben einfacher ist <br>
+            als dein Lieblingslied mitzusummen.
+        </h1>
+
+        <div class="lead">
+            Als pulsierendes Herz der Kulturszene in Chur bringen wir frischen Wind in die lokale Kulturwelt <br> und vernetzen Künstler, Kreative und Kulturbegeisterte auf innovative Weise.
+
+        </div>
             
             <div class="button_container">
                 <a href="/angebote.html" class="button_header">Start jetzt dein kulturelles Abenteuer!</a>
@@ -46,8 +77,8 @@
    </div>
 
 
-<article class="angebote_teaser">
-    <div class="ausflüge">
+
+    <!-- <div class="ausflüge">
         <img id="ausflüge_bild" src="/img/bilder_homepage/ausfluege.png" alt="Bild einer Stadtfürung">
     </div>
     <div class="interaktive_erlebnisse">
@@ -55,7 +86,30 @@
     </div>
     <div class="community_events">
         <img id="community_events_bild" src="/img/bilder_homepage/community_events.png" alt="Bild einer Stadtfürung">
-    </div>
+    </div> -->
+
+    <article class="angebote_teaser">
+        
+        <div class="teaser_text">
+            <p><strong>"Kulturnest" ist mehr als nur eine Plattform – </strong>es ist ein lebendiges Zentrum der kulturellen Vielfalt in Chur. Von aufregenden Veranstaltungen bis hin zu kreativen Workshops – wir bieten ein breites Spektrum an kulturellen Erlebnissen. Immer am Puls des kulturellen Geschehens, setzen wir auf innovative Konzepte, die Kreativität unserer Community und sind stets bestrebt, die Kultur in Chur auf einzigartige Weise zu bereichern und zu fördern.</p>
+        </div>
+    
+        <div class="tiles">
+            <a class="tile" href="#"><img src="/img/bilder_angebot/Museumsbesuch.jpg"/>
+                <div class="details"><span class="title">Lorem Ipsum Dolor</span><span class="info">Quisque vel felis lectus donec vitae dapibus magna</span></div>
+            </a>
+            <a class="tile" href="#"><img src="/img/bilder_angebot/Wintermarkt.JPG"/>
+                <div class="details"><span class="title">Lorem Ipsum Dolor</span><span class="info">Quisque vel felis lectus donec vitae dapibus magna</span></div>
+            </a>
+            <a class="tile" href="#"><img src="/img/bilder_angebot/KleinesKonzert.JPG"/>
+                <div class="details"><span class="title">Lorem Ipsum Dolor</span><span class="info">Quisque vel felis lectus donec vitae dapibus magna</span></div>
+            </a>
+            <a class="tile" href="#"><img src="/img/bilder_angebot/Bouldern.jpg"/>
+                <div class="details"><span class="title">Lorem Ipsum Dolor</span><span class="info">Quisque vel felis lectus donec vitae dapibus magna</span></div>
+            </a>
+        </div>
+    </article>
+
 
 </article>
 
@@ -127,14 +181,6 @@
         <a href="/ueberuns.html"><h2>lerne das “kulturnest-team” kennen</h2></a>   
     </div>
 
-    <div id="input_field">
-        <form action="/action_page.php">
-          <label for="fname">E-Mailadresse</label>
-          <input type="text" id="fname" name="firstname" placeholder="E-Mail">
-        
-          <input type="submit" value="Anmelden">
-        </form>
-      </div>
 
   </article>
 
@@ -147,32 +193,94 @@
 <!--HIER ENDET DER INHALT DER SEITE-->
 
 <footer>
-        <div class="adresse_footer">   
-            <img src="img/kulturnest_schriftzug_negativ.svg" width="50%" alt="Logo kulturnest"><br>
+    <div class="adresse_footer">   
+        <img src="img/kulturnest_schriftzug_negativ.svg" style="width: 50%;" alt="Logo kulturnest"><br>
 
-            Sommeraustrasse 32 <br>
-            CH-7000 Chur <br>
-            <a href="mailto:info@kulturnest.ch">info@kulturnest.ch</a><br>
-            <a href="https://416577-4.web.fhgr.ch/" target="_blank">www.kulturnest.ch</a><br>
-        </div>
-
-
-
-    <div class="weitere_links">
-        <a href="angebote.html">angebote</a> <br>
-        <a href="ueberuns.html">über uns</a> <br>
-        <a href="kontakt.html">kontakt</a> <br>
+        Sommeraustrasse 32 <br>
+        CH-7000 Chur <br>
+        <a href="mailto:info@kulturnest.ch">info@kulturnest.ch</a><br>
+        <a href="https://416577-4.web.fhgr.ch/" target="_blank">www.kulturnest.ch</a><br>
     </div>
 
 
-    <div class="social_media_icons">
-       <a href="https://www.instagram.com/" target="_blank"><img src="/img/instagram_negative.svg" alt="icon instagram"></a>
-       <a href="https://www.facebook.com/" target="_blank"><img src="/img/facebook_negative.svg" alt="icon facebook"></a>
-       <a href="https://twitter.com/" target="_blank"><img src="/img/x_negative.svg" alt="icon x"></a>
-       <a href="https://www.linkedin.com/" target="_blank"><img src="/img/linkedin_negative.svg" alt="icon linkedin"></a>
- </div>
 
+<div class="weitere_links">
+    <a href="angebote.html">angebote</a> <br>
+    <a href="ueberuns.html">über uns</a> <br>
+    <a href="kontakt.html">kontakt</a> <br>
+</div>
 
+<!-- Social Media Bereich START -->
+<div class="social_media_icons">
+   <a href="https://www.instagram.com/" target="_blank"><img src="/img/instagram_negative.svg" alt="icon instagram"></a>
+   <a href="https://www.facebook.com/" target="_blank"><img src="/img/facebook_negative.svg" alt="icon facebook"></a>
+   <a href="https://twitter.com/" target="_blank"><img src="/img/x_negative.svg" alt="icon x"></a>
+   <a href="https://www.linkedin.com/" target="_blank"><img src="/img/linkedin_negative.svg" alt="icon linkedin"></a>
+    
+
+   <div id="input_field">
+    <form action="/action_page.php">
+      <label for="fname">Newsletter Anmeldung</label>
+      <input type="text" id="fname" name="firstname" placeholder="E-Mail">
+    </form>
+
+    <div class="anmeldebutton">
+        <!-- Trigger/Open The Modal -->
+        <button id="myBtn">Anmeldung</button>
+    
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+    
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Vielen Dank für deine Anmeldung</p>
+        </div>
+    
+        </div>
+    
+        <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+    
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+    
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+    
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+        modal.style.display = "block";
+        }
+    
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+    
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+        }
+        </script>
+    
+    </div>
+</div>
+<!-- Social Media Bereich ENDE -->
+
+</div>
+
+<p>
+<a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+    <img style="border:0;width:88px;height:31px"
+        src="https://jigsaw.w3.org/css-validator/images/vcss"
+        alt="CSS ist valide!" />
+</a>
+</p>
+ 
 
 </footer>
 

@@ -1,6 +1,7 @@
 :root {
 background-color: black;
 --beige: rgba(255,210,153,1);
+--shadow-color: hsl(0deg 0% 0% / 0.5);
 }
 
 *{
@@ -36,13 +37,17 @@ background-color: black;
   }
 
 
-
   main{
     width:100%;
     height: 100%;
     margin-top: 80px;
     margin-bottom: 100px;
   }
+
+  body {
+    width: 100%;
+    margin: 0; /* Entfernt den Standardrand des Browsers */
+}
 
   .logo{ /*NICHT ANPASSEN!*/
     width: 500px;
@@ -52,7 +57,9 @@ background-color: black;
     display: block;    
   }
 
-  .nav_links{ /*NICHT ANPASSEN!*/
+  @import url("https://fonts.googleapis.com/css?family=Open+Sans:700");
+
+  .nav_links{ 
     display:flex;
     flex-wrap: wrap;
     list-style:none;
@@ -60,23 +67,76 @@ background-color: black;
     justify-content: center;
   }
 
-  .nav_links li a{ /*NICHT ANPASSEN!*/
+  .nav_links li {
+    margin: 0 20px;
+    position: relative;
+  }
+  .nav_links li a {
+    text-decoration: none;
+    display: block;
+    padding: 5px 20px;
+    font-family: "Open Sans";
+    font-size: 26px;
+    line-height: 1;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, rgb(255,210,153,1), rgb(255,210,153,1) 50%, #fff 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    transition: all 0.3s ease-in-out;
+    background-color: transparent; /* Standard-Hintergrundfarbe */
+    transition: background-color 0.3s ease-in-out; /* Übergangsanimation für die Hintergrundfarbe */
+  
+  }
+
+  .nav_links li a:before {
+    display: block;
+    content: "";
+    width: 0;
+    height: 3px;
+    bottom: 5px;
+    left: 0;
+    bottom: -3px;
+    z-index: 0;
+    position: absolute;
+    background: var(--beige);
+    transition: all 0.3s ease-in-out;
+  }
+  .nav_links li a:hover {
+    background-position: 0%;
+    background-color: var(--beige); /* Beim Hoveren auf Beige ändern */
+
+  }
+  .nav_links li a:hover:before {
+    width: 100%;
+  }
+
+
+  /* 
+
+  .nav_links li a{ 
     display: block;
     box-sizing:border-box;
     height:40px;
     padding: 10px 15px 0px 15px;
+    font-size: 24px;
   }
 
-  .aktiver_menuelink{ /*NICHT ANPASSEN!*/
+
+  .aktiver_menuelink{ 
     color:var(--beige);
     transition: color 0.3s;
   }
 
-  .nav_links li a:hover, .aktiver_menuelink{ /*NICHT ANPASSEN!*/
+  .nav_links li a:hover, .aktiver_menuelink{ 
     color:var(--beige);
     border-bottom-style: solid;
     border-bottom-width: 2px;
-  }
+  } */
 
   h1{ /*NICHT ANPASSEN!*/
     font-size: 60px;
@@ -102,15 +162,224 @@ background-color: black;
     margin-bottom: 30px;
   }
 
-
-
-
-.angebote_teaser{
+  .box1 {
     display: flex;
-    flex-direction: row; /* Ändert die Anordnung der Elemente in eine Zeile */
-    align-items: flex-start; /* Linksbündige Ausrichtung der Elemente */
-    margin-bottom: 150px;
+    height: 300px;
+    filter: drop-shadow(
+      1px 2px 8px var(--shadow-color)
+    );
+    margin-right: 100px;
+    margin-top: 50px;
   }
+
+  .box2 {
+    display: flex;
+    height: 300px;
+    filter: drop-shadow(
+      1px 2px 8px var(--shadow-color)
+    );
+    margin-right: 100px;
+    margin-top: 50px;
+  }
+
+
+  .angebote_teaser {
+    display: flex;
+    flex-direction: row; /* Ändert die Anordnung der Elemente in eine Spalte */
+    align-items: center; /* Zentriert die Elemente horizontal */
+    justify-content: center; /* Zentriert die Elemente vertikal */
+    margin: 0;
+    padding: 0;
+    background-color: var(--beige);
+    min-height: 500px; /* Mindesthöhe des Teasers, um Platz für die Boxen zu schaffen */
+    border-radius: 10px;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    margin-bottom: 100px;
+    /*background-image: url(/img/flowers/flower_orange2.svg);*/
+    background-size: cover; /* Das Bild wird proportioniert und deckt den Teaser ab */
+    background-repeat: no-repeat; /* Das Bild wird nicht wiederholt */
+    background-position: center; /* Das Bild wird horizontal und vertikal zentriert */
+    
+
+  }
+
+  .teaser_text {
+    flex: 4;
+
+  }
+  
+  .teaser_text p {
+    flex: 2;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    font-size: 30px;
+    font-weight: 200;
+    color: black;
+  }
+
+  .teaser_text strong {
+    font-weight: bold; /* Fettgedruckte Schrift */
+    color: black;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+/* Angebotsboxen mit Hover-Effekt START */
+
+.tiles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Zentriert die Tiles horizontal */
+  align-items: center; /* Zentriert die Tiles vertikal */
+  max-width: 1000px; /* Begrenze die Breite der Tiles */
+  margin: 0 auto; /* Zentriert die Tiles horizontal auf der Seite */
+}
+
+
+.tiles .tile {
+  display: inline-block;
+  margin: 10px;
+  text-align: left;
+  opacity: 0.99;
+  overflow: hidden;
+  position: relative;
+  border-radius: 3px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
+}
+.tiles .tile:before {
+  content: "";
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+  width: 100%;
+  height: 50%;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 2;
+  transition-property: top, opacity;
+  transition-duration: 0.3s;
+}
+.tiles .tile img {
+  display: block;
+  width: 200px; /* Gewünschte Breite */
+  height: 300px; /* Gewünschte Höhe */
+  object-fit: cover; /* Beibehalten des Seitenverhältnisses und Beschneiden des Bildes, um es in das festgelegte Rechteck zu passen */
+}
+
+.tiles .tile .details {
+  font-size: 16px;
+  padding: 20px;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+}
+.tiles .tile .details span {
+  display: block;
+  opacity: 0;
+  position: relative;
+  top: 100px;
+  transition-property: top, opacity;
+  transition-duration: 0.3s;
+  transition-delay: 0s;
+}
+.tiles .tile .details .title {
+  line-height: 1;
+  font-weight: 600;
+  font-size: 18px;
+}
+.tiles .tile .details .info {
+  line-height: 1.2;
+  margin-top: 5px;
+  font-size: 12px;
+}
+.tiles .tile:focus:before,
+.tiles .tile:focus span, .tiles .tile:hover:before,
+.tiles .tile:hover span {
+  opacity: 1;
+}
+.tiles .tile:focus:before, .tiles .tile:hover:before {
+  top: 50%;
+}
+.tiles .tile:focus span, .tiles .tile:hover span {
+  top: 0;
+}
+.tiles .tile:focus .title, .tiles .tile:hover .title {
+  transition-delay: 0.15s;
+}
+.tiles .tile:focus .info, .tiles .tile:hover .info {
+  transition-delay: 0.25s;
+}
+
+/* Angebotsboxen mit Hover-Effekt ENDE */
+
+  /* .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; 
+    margin-right: 10vw;
+  } */
+
+
+  
+  .box {
+    min-width: 300px;
+    height: 200px;
+    border-radius: 8px;
+    background: white;
+    display: grid;
+    place-content: center;
+    font-size: 24px;
+    filter: drop-shadow(1px 2px 8px var(--shadow-color));
+    transition: background-size 0.2s; /* Übergangseigenschaft für die Hintergrundgröße hinzufügen */
+
+
+  }
+
+  /* .box:hover {
+    transform: scale(1.05); 
+  }
+
+  #box1{
+    background-image: url(/img/bilder_angebot/Museumsbesuch.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center; 
+  
+  }
+
+  #box2{
+    background-image: url(/img/bilder_angebot/Wintermarkt.JPG);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center; 
+  
+  }
+
+  #box3{
+    background-image: url(/img/bilder_angebot/KleinesKonzert.JPG);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center; 
+  
+  }
+
+  #box4{
+    background-image: url(/img/bilder_angebot/Bouldern.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center;
+  
+  } */
+
 
   #ausflüge_bild,
   #interaktive_erlebnisse_bild,
@@ -129,6 +398,9 @@ background-color: black;
   #gleichgesinnte_text, #bingo_artikel_text{
     flex: 1;
     margin-right: 50px;
+    font-size: 20px;
+    font-weight: 300;
+
   }
 
   #gleichgesinnte_bild, #bingo_artikel_bild {
@@ -139,6 +411,7 @@ background-color: black;
     /*box-shadow: rgba(255, 255, 255, 0.446) 10px 15px 25px, rgb(255, 255, 255, 0.15) 10px 5px 10px;*/
 
   }
+
 
   .zugang {
     display: flex;
@@ -162,6 +435,8 @@ background-color: black;
 
 #zugang_text {
     flex: 1;
+    font-size: 20px;
+    font-weight: 300;
 }
 
 #zugang_text h2 {
@@ -174,20 +449,6 @@ background-color: black;
 }
 
 
-  .kulturnest-card {
-    display: flex;
-    align-items: center;
-    background-color: var(--beige); /* Hintergrundfarbe in Beige */
-    max-width: 600px;
-    height: auto;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    padding: 40px;
-    border-radius: 10px;
-    position: relative; /* Position relativ setzen */
-    transition: background-color 0.3s; /* Fügt eine sanfte Übergangsanimation hinzu */
-  }
-  
   /* Pseudo-Element für das Overlay beim Hovern */
   .kulturnest-card {
     display: flex;
@@ -203,23 +464,6 @@ background-color: black;
     transition: background-color 0.3s; /* Fügt eine sanfte Übergangsanimation hinzu */
   }
   
-  /* Pseudo-Element für das Overlay beim Hovern */
-  .kulturnest-card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(230, 107, 0, 0.3); /* Halbtransparente Overlay-Farbe */
-    border-radius: 10px;
-    opacity: 0; /* Standardmäßig unsichtbar */
-    transition: opacity 0.3s; /* Übergang für die Opazität hinzufügen */
-  }
-  
-  .kulturnest-card:hover::before {
-    opacity: 1; /* Overlay beim Hovern sichtbar machen */
-  }
   
   #card_text {
     color: #000000; /* Textfarbe auf Schwarz setzen */
@@ -228,10 +472,27 @@ background-color: black;
     z-index: 1; /* Über dem Overlay platzieren */
     margin-right: 50px;
   }
+
+  /* Vergrößern des Bildes beim Hovern */
+.kulturnest-card img {
+  transition: transform 0.3s; /* Übergangseigenschaft für die Transformation hinzufügen */
+}
+
+/* Effekt beim Hovern */
+.kulturnest-card:hover img {
+  transform: scale(1.1); /* Vergrößert das Bild um 10% beim Hovern */
+}
   
 
   .kulturnest-card h2, .kulturnest-card p{
     color: black;
+  }
+
+
+  .lead {
+    margin: 20px auto 0; /* Zentriert den Text horizontal und fügt oben einen Abstand hinzu */
+    text-align: center;
+    font-size: 24px;
   }
 
 
@@ -241,9 +502,8 @@ background-color: black;
     display: flex;
     justify-content: center; /* Zentriert den Inhalt horizontal */
     align-items: center; /* Zentriert den Inhalt vertikal */
-    height: 10vw; /* 100% der Bildschirmhöhe */
-    margin-bottom: 40px;
-    
+    margin-top: 40px;
+    margin-bottom: 100px;
   }
   
   .button_header {
@@ -257,9 +517,8 @@ background-color: black;
     color: #000000;
     cursor: pointer;
     display: inline-flex;
-    font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 24px;
+    font-weight: 800;
     justify-content: center;
     line-height: 1.25;
     margin: 0;
@@ -267,6 +526,7 @@ background-color: black;
     padding: calc(.875rem - 1px) calc(1.5rem - 1px);
     position: relative;
     text-decoration: none;
+    text-align: center;
     transition: all 250ms;
     user-select: none;
     -webkit-user-select: none;
@@ -292,8 +552,8 @@ background-color: black;
   }
 
   /*Newsletter Input Field*/
-    /*Input Field für Newsletter
-  input[type=text], select {
+  /* Input Field für Newsletter
+    input[type=text], select {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -302,30 +562,78 @@ background-color: black;
     border-radius: 4px;
     box-sizing: border-box;
     color: #000000;
-  }
+  } */
 
   input[type=submit] {
-    width: 100%;
+    width: 100px;
     background-color: var(--beige);
     color: white;
-    padding: 14px 20px;
+    padding: 7px 16px;
     margin: 8px 0;
     border: none;
     border-radius: 4px;
     cursor: pointer;
   }
   
-  input[type=submit]:hover {
-    background-color: #45a049;
+
+  #fname{
+    color: black;
   }
-  
-  #input_field {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
+
+  /* Beginn der Popup-Box */
+
+  #myBtn{
+    color: black;
+    background-color: var(--beige);
   }
-  */
-  
+  /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #000000;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Ende der Popup-Box */
+
+
+
+
+
+
+
+
 
   /*Footerbereich*/
   footer {
@@ -397,4 +705,38 @@ background-color: black;
     }
   }
 
+  @media (max-width: 1500px) {
+    .wrapper {
+      display: grid;
+      flex-direction: column;
+      grid-template-columns: 1fr; /* Nur eine Spalte */
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      align-items: center; /* Zentriert die Boxen horizontal */
+      margin-right: 0;
+      margin-bottom: 5%;
+    }
+  
+    .box {
+      width: 100%; /* Boxen nehmen die volle Breite ein */
+      margin: 10px 0; /* Fügt oben und unten einen Abstand hinzu */
+    }
+  
+    .angebote_teaser {
+      flex-direction: column;
+      align-items: center; /* Zentriert den Text und die Boxen horizontal */
+    }
+  
+    .teaser_text p {
+      text-align: center; /* Zentriert den Text horizontal */
+    }
 
+    .kulturnest-card {
+      flex-direction: column; /* Ändert die Anordnung der Elemente in eine Spalte */
+      align-items: center; /* Zentriert die Elemente horizontal */
+      text-align: center; /* Zentriert den Text horizontal */
+    }
+  
+    #card_text {
+      margin-right: 0; /* Entfernt den rechten Abstand für schmalere Bildschirme */
+    }
+  }
