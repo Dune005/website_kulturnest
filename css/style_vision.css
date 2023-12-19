@@ -14,8 +14,8 @@
     
       html{ /*NICHT ANPASSEN!*/
         height:auto;
-        margin-left: 20vw;
-        margin-right: 20vw;
+        margin-left: 15vw;
+        margin-right: 15vw;
       }
     
       header{ /*NICHT ANPASSEN!*/
@@ -39,10 +39,11 @@
       }
     
       .logo{ /*NICHT ANPASSEN!*/
-        width: 500px;
+        width: 700px;
         height: auto;
-        padding-top: 20px;
+        padding-top: 10px;
         margin: 0 auto;
+        margin-bottom: 50px;
         display: block;    
       }
     
@@ -78,13 +79,15 @@
         border-bottom-width: 2px;
     }
     
-      h1{ /*NICHT ANPASSEN!*/
-        font-size: 60px;
-        font-weight: 800;
-        text-align: left;
-        margin-top: 50px;
-        margin-bottom: 50px;
-      }
+         
+    h1{ /*NICHT ANPASSEN!*/
+      font-size: 60px;
+      font-weight: 800;
+      text-align: left;
+      margin-top: 100px;
+      margin-bottom: 20px;
+    }
+  
     
       h2{
         font-size: 20px;
@@ -108,15 +111,18 @@
         align-items: flex-start; /* Linksbündige Ausrichtung der Elemente */
       }
     
+
       #einleitung_text{
         flex: 1;
-        margin-right: 50px;
+        align-items: center;
       }
+
+      .einleitung_film{
+        flex: 1;
+        align-items:center;
+      }
+
     
-      #einleitung_bild {
-        flex: unset; /* Auf 'unset' setzen, um das vorherige Flex-Verhalten aufzuheben */
-        margin-left: 50px; /* Abstand zwischen p und Bild */
-      }
     
       /*Footerbereich*/
       footer {
