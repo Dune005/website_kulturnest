@@ -47,7 +47,7 @@
         display: block;    
       }
     
-      .nav_links{ /*NICHT ANPASSEN!*/
+      .nav_links{ 
         display:flex;
         flex-wrap: wrap;
         list-style:none;
@@ -55,22 +55,52 @@
         justify-content: center;
       }
     
-      .nav_links li a{ /*NICHT ANPASSEN!*/
+      .nav_links li {
+        margin: 0 15px;
+        position: relative;
+      }
+      .nav_links li a {
+        text-decoration: none;
         display: block;
-        box-sizing:border-box;
-        height:40px;
-        padding: 10px 15px 0px 15px;
+        padding: 5px 0px;
+        font-family: "Open Sans";
+        font-size: 26px;
+        line-height: 1;
+        font-weight: bold;
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: linear-gradient(to right, rgb(255,210,153,1), rgb(255,210,153,1) 50%, #fff 50%);
+        background-size: 200% 100%;
+        background-position: -100%;
+        transition: all 0.3s ease-in-out;
+        background-color: transparent; /* Standard-Hintergrundfarbe */
+        transition: background-color 0.3s ease-in-out; /* Übergangsanimation für die Hintergrundfarbe */
+      
       }
     
-      .aktiver_menuelink{ /*NICHT ANPASSEN!*/
-        color:var(--beige);
-        transition: color 0.3s;
+      .nav_links li a:before {
+        display: block;
+        content: "";
+        width: 0;
+        height: 3px;
+        bottom: 5px;
+        left: 0;
+        bottom: -3px;
+        z-index: 0;
+        position: absolute;
+        background: var(--beige);
+        transition: all 0.3s ease-in-out;
       }
+      .nav_links li a:hover {
+        background-position: 0%;
+        background-color: var(--beige); /* Beim Hoveren auf Beige ändern */
     
-      .nav_links li a:hover, .aktiver_menuelink{ /*NICHT ANPASSEN!*/
-        color:var(--beige);
-        border-bottom-style: solid;
-        border-bottom-width: 2px;
+      }
+      .nav_links li a:hover:before {
+        width: 100%;
       }
 
       .active {
@@ -222,7 +252,7 @@
         flex: 3;
         font-size: 14px;
         text-align: left;
-        margin-top: 29px;
+        margin-top: 20px;
       }
     
       .social_media_icons{ /*NICHT ANPASSEN!*/
