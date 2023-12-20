@@ -1,13 +1,13 @@
 :root {
-    background-color: black;
-    --beige: rgba(255,210,153,1);
+    background-color: #FFE1AC;
+    --beige:black;
     }
     
     *{
         font-family: 'Lato', sans-serif;
         font-weight:500;
         font-size:16px;
-        color:white;
+        color:black;
       
         text-decoration:none;
       }
@@ -80,34 +80,106 @@
     }
     
          
-    h1{ /*NICHT ANPASSEN!*/
+      h1{ /*NICHT ANPASSEN!*/
       font-size: 60px;
       font-weight: 800;
       text-align: left;
       margin-top: 100px;
       margin-bottom: 20px;
-    }
+     }
   
     
       h2{
         font-size: 20px;
         font-weight: 800;
         text-align: left;
-        margin-top: 0px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+      }
+
+      h5{
+        font-size: 16px;
+        font-weight: 650;
+        text-align: justify;
+        margin-top: 20px;
         margin-bottom: 0px;
       }
     
       p{
         font-size: 16px;
         font-weight: 400;
-        text-align: left;
+        text-align: justify;
         margin-top: 10px;
         margin-bottom: 30px;
       }
     
+        .kulturnest{
+          font-size: 20px;
+          font-weight: 800;
+          text-align: left;
+          margin-top: 20px;
+          margin-bottom: 0px;
+        }
+            .kulturnest_lead{
+              font-size: 16px;
+              font-weight: 650;
+              text-align: justify;
+              margin-top: 20px;
+              margin-bottom: 0px;
+              flex: 1;
+              padding-right: 60%;
+            }
+            .kulturnest_text{
+              font-size: 16px;
+              font-weight: 400;
+              text-align: justify;
+              margin-top: 10px;
+              margin-bottom: 30px;
+              flex: 1;
+              padding-right: 60%;
+            }
+
+        .vision{
+          font-size: 20px;
+          font-weight: 800;
+          text-align: left;
+          margin-top: 20px;
+          margin-bottom: 0px;
+          flex:1;
+          padding-left: 55%; 
+        }    
+            .vision_lead{
+              font-size: 16px;
+              font-weight: 650;
+              text-align: justify;
+              margin-top: 20px;
+              margin-bottom: 0px;
+              flex: 1;
+              padding-left: 55%;
+              margin-right: 110px;
+            }
+            .vision_text{
+              font-size: 16px;
+              font-weight: 400;
+              text-align: justify;
+              margin-top: 10px;
+              margin-bottom: 30px;
+              flex: 1;
+              padding-left: 55%;
+              margin-right: 110px;
+            }
+
+      #nest_bild{
+        width: 200px;
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 550px;
+      }      
+
       .einleitung {
         display: flex;
-        flex-direction: row; /* Ändert die Anordnung der Elemente in eine Spalte */
+        flex-direction: column; /* Ändert die Anordnung der Elemente in eine Spalte */
         align-items: flex-start; /* Linksbündige Ausrichtung der Elemente */
       }
     
