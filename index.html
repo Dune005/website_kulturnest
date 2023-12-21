@@ -65,7 +65,7 @@
 
 <main>
 
-    <div class="main-content">
+    <!-- <div class="main-content"> -->
 
         <div class="header-section">
             <h1>Wenn Kultur erleben einfacher ist <br>
@@ -115,19 +115,19 @@
                 </a>
             </div>
 
-            <div>
-                <p>Einfache Planung mit unserer Plattform
-                    - Wähle Deine Events mit nur ein paar Klicks
-                    - Kulturkalender und einfache Buchungsoptionen
-                    - Persönliches Konto für ein nahtloses Erlebnis auf unserer Plattform
-                    - Ändere Deine Pläne jederzeit – flexibel und unkompliziert</p>
 
-
-            </div>
 
 
         </article>
+        <div>
+            <p>Einfache Planung mit unserer Plattform
+                - Wähle Deine Events mit nur ein paar Klicks
+                - Kulturkalender und einfache Buchungsoptionen
+                - Persönliches Konto für ein nahtloses Erlebnis auf unserer Plattform
+                - Ändere Deine Pläne jederzeit – flexibel und unkompliziert</p>
 
+
+        </div>
 
 
 
@@ -213,101 +213,104 @@
     
     
     
-    </div>  
+    <!-- </div>   -->
 </main>
 
 <!--HIER ENDET DER INHALT DER SEITE-->
 
 <footer>
-    <div class="adresse_footer">   
+    <div class="footer_content">   
+
+        <div class="footer_logo">
         <img src="img/kulturnest_schriftzug_negativ.svg" style="width: 50%;" alt="Logo kulturnest"><br>
+        </div>     
 
-        Sommeraustrasse 32 <br>
-        CH-7000 Chur <br>
-        <a href="mailto:info@kulturnest.ch">info@kulturnest.ch</a><br>
-        <a href="https://416577-4.web.fhgr.ch/" target="_blank">www.kulturnest.ch</a><br>
+        <div class="footer_adresse">
+            Sommeraustrasse 32 <br>
+            CH-7000 Chur <br>
+            <a href="mailto:info@kulturnest.ch">info@kulturnest.ch</a><br>
+            <a href="https://416577-4.web.fhgr.ch/" target="_blank">www.kulturnest.ch</a><br>
+        </div>
+
+
+
+        <div class="weitere_links">
+            <a href="angebote.html">angebote</a> <br>
+            <a href="team.html">team</a> <br>
+            <a href="kontakt.html">kontakt</a> <br>
+            <a href="impressum.html">impressum</a> <br>
+        </div>
+
+        <!-- Social Media Bereich START -->
+        <div class="social_media_icons">
+            <a href="https://www.instagram.com/" target="_blank"><img src="/img/instagram_negative.svg" alt="icon instagram"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="/img/facebook_negative.svg" alt="icon facebook"></a>
+            <a href="https://twitter.com/" target="_blank"><img src="/img/x_negative.svg" alt="icon x"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="/img/linkedin_negative.svg" alt="icon linkedin"></a>
+        </div>    
+
+
+        <!-- Social Media Bereich ENDE -->
+
     </div>
 
 
+ <!-- NEWSLETTER-FELD START -->
 
-<div class="weitere_links">
-    <a href="angebote.html">angebote</a> <br>
-    <a href="team.html">team</a> <br>
-    <a href="kontakt.html">kontakt</a> <br>
-    <a href="impressum.html">impressum</a> <br>
-</div>
+    <!-- <div id="input_field">
+        <form action="/action_page.php">
+            <label for="fname">Newsletter Anmeldung</label>
+            <input type="text" id="fname" name="firstname" placeholder="E-Mail">
+        </form>
 
-<!-- Social Media Bereich START -->
-<div class="social_media_icons">
-   <a href="https://www.instagram.com/" target="_blank"><img src="/img/instagram_negative.svg" alt="icon instagram"></a>
-   <a href="https://www.facebook.com/" target="_blank"><img src="/img/facebook_negative.svg" alt="icon facebook"></a>
-   <a href="https://twitter.com/" target="_blank"><img src="/img/x_negative.svg" alt="icon x"></a>
-   <a href="https://www.linkedin.com/" target="_blank"><img src="/img/linkedin_negative.svg" alt="icon linkedin"></a>
-    
-
-   <div id="input_field">
-    <form action="/action_page.php">
-      <label for="fname">Newsletter Anmeldung</label>
-      <input type="text" id="fname" name="firstname" placeholder="E-Mail">
-    </form>
-
-    <div class="anmeldebutton">
-        <!-- Trigger/Open The Modal -->
-        <button id="myBtn">Anmeldung</button>
-    
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
-    
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>Vielen Dank für deine Anmeldung</p>
-        </div>
-    
-        </div>
-    
-        <script>
-        // Get the modal
-        var modal = document.getElementById("myModal");
-    
-        // Get the button that opens the modal
-        var btn = document.getElementById("myBtn");
-    
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-    
-        // When the user clicks the button, open the modal 
-        btn.onclick = function() {
-        modal.style.display = "block";
-        }
-    
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-        modal.style.display = "none";
-        }
-    
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-        if (event.target == modal) {
+        <div class="anmeldebutton">
+            
+            <button id="myBtn">Anmeldung</button>
+        
+            
+            <div id="myModal" class="modal">
+        
+            
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Vielen Dank für deine Anmeldung</p>
+            </div>
+        
+            </div>
+        
+            <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+        
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+        
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+        
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+            modal.style.display = "block";
+            }
+        
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
             modal.style.display = "none";
-        }
-        }
-        </script>
+            }
+        
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+            }
+            </script>
+        
+        </div>
+
+    </div> -->
     
-    </div>
-</div>
-<!-- Social Media Bereich ENDE -->
-
-</div>
-
-<p>
-<a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank">
-    <img style="border:0;width:88px;height:31px"
-        src="https://jigsaw.w3.org/css-validator/images/vcss"
-        alt="CSS ist valide!" />
-</a>
-</p>
- 
+ <!-- NEWSLETTER-FELD START -->
 
 </footer>
 

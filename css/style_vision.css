@@ -106,6 +106,12 @@
     .nav_links li a:hover:before {
       width: 100%;
     }
+
+    .active {
+      color: var(--beige); /* Farbe für den aktiven Navigationspunkt */
+      border-bottom-style: solid;
+      border-bottom-width: 2px;
+  }
   
          
       h1{ /*NICHT ANPASSEN!*/
@@ -150,6 +156,7 @@
         margin-top: 10px;
         margin-bottom: 30px;
       }
+
  .zentriert{
         display: flex;
         align-items: center; 

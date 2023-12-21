@@ -1,5 +1,5 @@
 :root {
-  background-color: #1b2028;
+  background-color: #242424;
   --beige: rgba(255,210,153,1);
   --shadow-color: hsl(0deg 0% 0% / 0.5);
   }
@@ -15,66 +15,25 @@
   
     html{ /*NICHT ANPASSEN!*/
       height:auto;
-      left: 0;
-      right: 0;
-      /* background-image: url('/img/voegel/vogel_weiss_transparent.png'); */
+      margin-left: 20vw;
+      margin-right: 20vw;
+      background-image: url('/img/voegel/vogel_weiss_transparent.png');
       background-size: contain; /* Das Bild wird gestreckt, um den gesamten Bildschirm zu bedecken */
       background-repeat: no-repeat; /* Das Bild wird nicht wiederholt */
       background-attachment: fixed; /* Das Bild bleibt statisch */
-      background: #141E30;  /* fallback for old browsers */
-      background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
-      background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
       height: 100%;
   
     }
   
-    .main-content {
-      margin-top: 170px; /* Fügen Sie einen oberen Abstand ein, um Platz für den Header zu schaffen */
-      /* padding: 20px; */
-  }
   
-  
-  .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: center; /* Zentriert den Inhalt horizontal */
-    align-items: center; /* Zentriert den Inhalt vertikal */
-    background-color: rgba(0, 0, 0, 1); /* Hintergrundfarbe hinzufügen, um den Kontrast zu erhöhen */
-    z-index: 100; /* Stellen Sie sicher, dass der Header über anderen Inhalten liegt */
-    padding: 20px; /* Einen Abstand um den Header hinzufügen */
-    transition: all 0.3s; /* Fügen Sie eine Übergangseigenschaft hinzu, um eine sanfte Animation zu ermöglichen */
-  }
-  
-  .header.smaller-header .logo img {
-    width: 200px; /* Ändern Sie die gewünschte Breite des kleineren Logos */
-    height: auto; /* Lassen Sie die Höhe automatisch anpassen, um das Seitenverhältnis beizubehalten */
-  }
-  
-  /* Stilregel für den kleineren Header */
-  .smaller-header {
-    height: 80px; /* Passen Sie die gewünschte Höhe an */
-    padding: 10px; /* Passen Sie den gewünschten Abstand an */
-  }
-
-      .header-section {
-        width: 100%; /* Setzen Sie die Breite auf 100% */
-        height: 500px;
-        background-image: url('/img/flowers/flower_orange2.svg');
-        /* background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);      background-repeat: no-repeat; */
-        
-        
-  
-        background-size: cover; /* Verwenden Sie 'cover', um das Hintergrundbild über die gesamte Breite zu erstrecken */
-        display: flex; /* Verwenden Sie Flexbox */
-        flex-direction: column; /* Ändert die Anordnung der Elemente in eine Spalte */
-        justify-content: center; /* Horizontal zentrieren */
-        align-items: center; /* Vertikal zentrieren */
+    header{ /*NICHT ANPASSEN!*/
+      width:100%;
+      height: 280px;
+      top: 0;
+      left: 0;
+      z-index: 100;
     }
-  
-  
+
     main{
       width:100%;
       height: 100%;
@@ -84,119 +43,223 @@
   
   
   
-  .logo {
-  width: 500px;
-  padding-top: 0px;
-  }
+    .logo{ /*NICHT ANPASSEN!*/
+      width: 500px;
+      height: auto;
+      padding-top: 20px;
+      margin: 0 auto;
+      display: block;    
+    }
   
-  .logo img {
-    max-width: 100%;
-    height: auto;
-    width: 300px;
-  }
+    .nav_links{ 
+      display:flex;
+      flex-wrap: wrap;
+      list-style:none;
+      padding: 0;
+      justify-content: center;
+    }
   
-  .nav_links{ 
-    display:flex;
-    flex-wrap: wrap;
-    list-style:none;
-    padding: 0;
-    justify-content: center;
-  }
+    .nav_links li {
+      margin: 0 15px;
+      position: relative;
+    }
+    .nav_links li a {
+      text-decoration: none;
+      display: block;
+      padding: 5px 0px;
+      font-family: "Open Sans";
+      font-size: 26px;
+      line-height: 1;
+      font-weight: bold;
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-image: linear-gradient(to right, rgb(255,210,153,1), rgb(255,210,153,1) 50%, #fff 50%);
+      background-size: 200% 100%;
+      background-position: -100%;
+      transition: all 0.3s ease-in-out;
+      background-color: transparent; /* Standard-Hintergrundfarbe */
+      transition: background-color 0.3s ease-in-out; /* Übergangsanimation für die Hintergrundfarbe */
+    
+    }
   
-  .nav_links li {
-    margin: 0 15px;
-    position: relative;
-  }
-  .nav_links li a {
-    text-decoration: none;
-    display: block;
-    padding: 5px 0px;
-    font-family: "Open Sans";
-    font-size: 26px;
-    line-height: 1;
-    font-weight: bold;
-    position: relative;
-    z-index: 1;
-    text-align: center;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(to right, rgb(255,210,153,1), rgb(255,210,153,1) 50%, #fff 50%);
-    background-size: 200% 100%;
-    background-position: -100%;
-    transition: all 0.3s ease-in-out;
-    background-color: transparent; /* Standard-Hintergrundfarbe */
-    transition: background-color 0.3s ease-in-out; /* Übergangsanimation für die Hintergrundfarbe */
+    .nav_links li a:before {
+      display: block;
+      content: "";
+      width: 0;
+      height: 3px;
+      bottom: 5px;
+      left: 0;
+      bottom: -3px;
+      z-index: 0;
+      position: absolute;
+      background: var(--beige);
+      transition: all 0.3s ease-in-out;
+    }
+    .nav_links li a:hover {
+      background-position: 0%;
+      background-color: var(--beige); /* Beim Hoveren auf Beige ändern */
   
-  }
-  
-  .nav_links li a:before {
-    display: block;
-    content: "";
-    width: 0;
-    height: 3px;
-    bottom: 5px;
-    left: 0;
-    bottom: -3px;
-    z-index: 0;
-    position: absolute;
-    background: var(--beige);
-    transition: all 0.3s ease-in-out;
-  }
-  .nav_links li a:hover {
-    background-position: 0%;
-    background-color: var(--beige); /* Beim Hoveren auf Beige ändern */
-  
-  }
-  .nav_links li a:hover:before {
-    width: 100%;
-  }
-  
-  
-  .nav_links li:last-child {
-    margin-right: 0;
-  }
-  
+    }
+    .nav_links li a:hover:before {
+      width: 100%;
+    }
 
-    
+    .active {
+      color: var(--beige); /* Farbe für den aktiven Navigationspunkt */
+      border-bottom-style: solid;
+      border-bottom-width: 2px;
+  }
+  
+         
       h1{ /*NICHT ANPASSEN!*/
-        font-size: 60px;
-        font-weight: 800;
-        text-align: center;
-        margin-top: 50px;
-        margin-bottom: 50px;
-      }
-    
+      font-size: 60px;
+      font-weight: 800;
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 20px;
+     }
+
+     .lead_header{
+      font-family: 'Lato', sans-serif;
+      font-weight:400;
+      font-size:24px;
+      color:white;
+      text-align: center;
+      margin: 20px;
+  
+    text-decoration:none;
+    }
+
       h2{
         font-size: 20px;
         font-weight: 800;
         text-align: left;
-        margin-top: 0px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+      }
+
+      h5{
+        font-size: 16px;
+        font-weight: 650;
+        text-align: justify;
+        margin-top: 20px;
         margin-bottom: 0px;
       }
     
       p{
         font-size: 16px;
         font-weight: 400;
-        text-align: left;
+        text-align: justify;
         margin-top: 10px;
         margin-bottom: 30px;
       }
-    
+ .zentriert{
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+      }
+ 
+      .balken {
+        background-color: #fcd29b;
+        display: flex;
+        width: 1000px;
+        height: 650px;
+        align-items: center;
+        justify-content: center;
+        padding: 20px; 
+    }
+
+    .flex-container{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .flex-item{
+      margin: 20px;
+      width: 500px;
+    }
+        .kulturnest{
+          font-size: 20px;
+          font-weight: 800;
+          text-align: left;
+          margin-top: 20px;
+          margin-bottom: 0px;
+        }
+            .lead{
+              font-size: 16px;
+              font-weight: 750px;
+              text-align: left;
+              margin-top: 20px;
+              margin-bottom: 0px;
+            }
+            .text{
+              font-size: 16px;
+              font-weight: 400;
+              text-align: left;
+              margin-top: 10px;
+              margin-bottom: 30px;
+            }
+
+        .vision{
+          font-size: 20px;
+          font-weight: 800;
+          text-align: left;
+          margin-top: 20px;
+          margin-bottom: 0px; 
+        }    
+          
+
+      #nest_bildx{
+        width: 250px;
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 450px;
+      }
+      
+      #nest_bild2x{
+        width: 250px;
+        height: auto;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        margin-left: 700px;
+      }
+
       .einleitung {
         display: flex;
-        flex-direction: row; /* Ändert die Anordnung der Elemente in eine Spalte */
+        flex-direction: column; /* Ändert die Anordnung der Elemente in eine Spalte */
         align-items: flex-start; /* Linksbündige Ausrichtung der Elemente */
       }
     
-      #einleitung_text{
+
+      #einleitung_textx{
         flex: 1;
-        margin-right: 50px;
+        align-items: center;
       }
+
+      .einleitung_film{
+        flex: 1;
+        align-items:center;
+      }
+
     
-      #einleitung_bild {
-        flex: unset; /* Auf 'unset' setzen, um das vorherige Flex-Verhalten aufzuheben */
-        margin-left: 50px; /* Abstand zwischen p und Bild */
-      }
+
+      .video_kulturnest {
+        width: calc(100% - 40px);
+        height: calc(100% - 40px); 
+        max-width: 100%; 
+        max-height: 100%; 
+        margin: auto; 
+        display: block;
+    }
+
+     
     
       /*Footerbereich*/
       footer {
@@ -224,7 +287,7 @@
         flex: 3;
         font-size: 14px;
         text-align: left;
-        margin-top: 20px;
+        margin-top: 29px;
       }
     
       .social_media_icons{ /*NICHT ANPASSEN!*/
@@ -236,4 +299,3 @@
       .social_media_icons img{ /*NICHT ANPASSEN!*/
         width: 30px;
       }
-    
