@@ -1,9 +1,5 @@
 :root {
-<<<<<<< Updated upstream
-  background-color: #242424;
-=======
   background-color: #1b2028;
->>>>>>> Stashed changes
   --beige: rgba(255,210,153,1);
   --shadow-color: hsl(0deg 0% 0% / 0.5);
   }
@@ -15,31 +11,6 @@
       color:white;
     
       text-decoration:none;
-<<<<<<< Updated upstream
-    }
-  
-    html{ /*NICHT ANPASSEN!*/
-      height:auto;
-      margin-left: 20vw;
-      margin-right: 20vw;
-      background-image: url('/img/voegel/vogel_weiss_transparent.png');
-      background-size: contain; /* Das Bild wird gestreckt, um den gesamten Bildschirm zu bedecken */
-      background-repeat: no-repeat; /* Das Bild wird nicht wiederholt */
-      background-attachment: fixed; /* Das Bild bleibt statisch */
-      height: 100%;
-  
-    }
-  
-  
-    header{ /*NICHT ANPASSEN!*/
-      width:100%;
-      height: 280px;
-      top: 0;
-      left: 0;
-      z-index: 100;
-    }
-
-=======
     }
   
     html{ /*NICHT ANPASSEN!*/
@@ -57,7 +28,11 @@
   
     }
   
-
+    .main-content {
+      margin-top: 170px; /* Fügen Sie einen oberen Abstand ein, um Platz für den Header zu schaffen */
+      /* padding: 20px; */
+  }
+  
   
   .header {
     position: fixed;
@@ -97,7 +72,6 @@ align-items: center; /* Vertikal zentrieren */
 }
   
   
->>>>>>> Stashed changes
     main{
       width:100%;
       height: 100%;
@@ -107,73 +81,6 @@ align-items: center; /* Vertikal zentrieren */
   
   
   
-<<<<<<< Updated upstream
-    .logo{ /*NICHT ANPASSEN!*/
-      width: 500px;
-      height: auto;
-      padding-top: 20px;
-      margin: 0 auto;
-      display: block;    
-    }
-  
-    .nav_links{ 
-      display:flex;
-      flex-wrap: wrap;
-      list-style:none;
-      padding: 0;
-      justify-content: center;
-    }
-  
-    .nav_links li {
-      margin: 0 15px;
-      position: relative;
-    }
-    .nav_links li a {
-      text-decoration: none;
-      display: block;
-      padding: 5px 0px;
-      font-family: "Open Sans";
-      font-size: 26px;
-      line-height: 1;
-      font-weight: bold;
-      position: relative;
-      z-index: 1;
-      text-align: center;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-image: linear-gradient(to right, rgb(255,210,153,1), rgb(255,210,153,1) 50%, #fff 50%);
-      background-size: 200% 100%;
-      background-position: -100%;
-      transition: all 0.3s ease-in-out;
-      background-color: transparent; /* Standard-Hintergrundfarbe */
-      transition: background-color 0.3s ease-in-out; /* Übergangsanimation für die Hintergrundfarbe */
-    
-    }
-  
-    .nav_links li a:before {
-      display: block;
-      content: "";
-      width: 0;
-      height: 3px;
-      bottom: 5px;
-      left: 0;
-      bottom: -3px;
-      z-index: 0;
-      position: absolute;
-      background: var(--beige);
-      transition: all 0.3s ease-in-out;
-    }
-    .nav_links li a:hover {
-      background-position: 0%;
-      background-color: var(--beige); /* Beim Hoveren auf Beige ändern */
-  
-    }
-    .nav_links li a:hover:before {
-      width: 100%;
-    }
-  
-         
-=======
   .logo {
   width: 500px;
   padding-top: 0px;
@@ -247,26 +154,15 @@ align-items: center; /* Vertikal zentrieren */
   }
   
    
->>>>>>> Stashed changes
       h1{ /*NICHT ANPASSEN!*/
       font-size: 60px;
       font-weight: 800;
-      text-align: center;
-      margin-top: 50px;
+      text-align: left;
+      margin-top: 100px;
       margin-bottom: 20px;
      }
-
-     .lead_header{
-      font-family: 'Lato', sans-serif;
-      font-weight:400;
-      font-size:24px;
-      color:white;
-      text-align: center;
-      margin: 20px;
   
-    text-decoration:none;
-    }
-
+    
       h2{
         font-size: 20px;
         font-weight: 800;
@@ -290,34 +186,7 @@ align-items: center; /* Vertikal zentrieren */
         margin-top: 10px;
         margin-bottom: 30px;
       }
- .zentriert{
-        display: flex;
-        align-items: center; 
-        justify-content: center;
-      }
- 
-      .balken {
-        background-color: #fcd29b;
-        display: flex;
-        width: 1000px;
-        height: 650px;
-        align-items: center;
-        justify-content: center;
-        padding: 20px; 
-    }
-
-    .flex-container{
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      gap: 20px;
-      justify-content: center;
-    }
-
-    .flex-item{
-      margin: 20px;
-      width: 500px;
-    }
+    
         .kulturnest{
           font-size: 20px;
           font-weight: 800;
@@ -325,19 +194,23 @@ align-items: center; /* Vertikal zentrieren */
           margin-top: 20px;
           margin-bottom: 0px;
         }
-            .lead{
+            .kulturnest_lead{
               font-size: 16px;
-              font-weight: 750px;
-              text-align: left;
+              font-weight: 650;
+              text-align: justify;
               margin-top: 20px;
               margin-bottom: 0px;
+              flex: 1;
+              padding-right: 60%;
             }
-            .text{
+            .kulturnest_text{
               font-size: 16px;
               font-weight: 400;
-              text-align: left;
+              text-align: justify;
               margin-top: 10px;
               margin-bottom: 30px;
+              flex: 1;
+              padding-right: 60%;
             }
 
         .vision{
@@ -345,25 +218,38 @@ align-items: center; /* Vertikal zentrieren */
           font-weight: 800;
           text-align: left;
           margin-top: 20px;
-          margin-bottom: 0px; 
+          margin-bottom: 0px;
+          flex:1;
+          padding-left: 55%; 
         }    
-          
+            .vision_lead{
+              font-size: 16px;
+              font-weight: 650;
+              text-align: justify;
+              margin-top: 20px;
+              margin-bottom: 0px;
+              flex: 1;
+              padding-left: 55%;
+              margin-right: 110px;
+            }
+            .vision_text{
+              font-size: 16px;
+              font-weight: 400;
+              text-align: justify;
+              margin-top: 10px;
+              margin-bottom: 30px;
+              flex: 1;
+              padding-left: 55%;
+              margin-right: 110px;
+            }
 
-      #nest_bildx{
-        width: 250px;
+      #nest_bild{
+        width: 200px;
         height: auto;
         margin-top: 20px;
         margin-bottom: 20px;
-        margin-left: 450px;
-      }
-      
-      #nest_bild2x{
-        width: 250px;
-        height: auto;
-        margin-top: 0px;
-        margin-bottom: 20px;
-        margin-left: 700px;
-      }
+        margin-left: 550px;
+      }      
 
       .einleitung {
         display: flex;
@@ -372,7 +258,7 @@ align-items: center; /* Vertikal zentrieren */
       }
     
 
-      #einleitung_textx{
+      #einleitung_text{
         flex: 1;
         align-items: center;
       }
@@ -383,17 +269,6 @@ align-items: center; /* Vertikal zentrieren */
       }
 
     
-
-      .video_kulturnest {
-        width: calc(100% - 40px);
-        height: calc(100% - 40px); 
-        max-width: 100%; 
-        max-height: 100%; 
-        margin: auto; 
-        display: block;
-    }
-
-     
     
       /*Footerbereich*/
       footer {
@@ -421,7 +296,7 @@ align-items: center; /* Vertikal zentrieren */
         flex: 3;
         font-size: 14px;
         text-align: left;
-        margin-top: 29px;
+        margin-top: 20px;
       }
     
       .social_media_icons{ /*NICHT ANPASSEN!*/
