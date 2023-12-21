@@ -35,6 +35,9 @@
             })});
     </script>
 
+<script src="script.js"></script> <!-- Link zum kleineren Header beim scrollen -->
+
+
 
 </head>
 
@@ -42,152 +45,175 @@
 
 <body>
     
-<header>
-    <div class="logo">
-        <a href="index.html">
-            <img src="img/Logo_kulturnest_Beige.svg" alt="Logo kulturnest">
-        </a>
-
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/Logo_kulturnest_Beige.svg" alt="Logo kulturnest">
+            </a>
+        </div>
         <nav>
             <ul class="nav_links">
-              <li><a href="/angebote.html">angebote</a></li>
-              <li><a href="/vision.html">vision</a></li>
-              <li><a href="/team.html">team</a></li>
-              <li><a href="/kontakt.html">kontakt</a></li>
+                <li><a href="/angebote.html">angebote</a></li>
+                <li><a href="/vision.html">vision</a></li>
+                <li><a href="/team.html">team</a></li>
+                <li><a href="/kontakt.html">kontakt</a></li>
             </ul>
-        </nav>   
-</header>
+        </nav>
+    </header>
 
 <!--HIER STARTET DER INHALT DER SEITE-->
+
 <main>
 
-    <div class="header-section">
-        <h1>Wenn Kultur erleben einfacher ist <br>
-            als dein Lieblingslied mitzusummen.
-        </h1>
+    <div class="main-content">
 
-        <div class="lead">
-            Als pulsierendes Herz der Kulturszene in Chur bringen wir frischen Wind in die lokale Kulturwelt <br> und vernetzen Künstler, Kreative und Kulturbegeisterte auf innovative Weise.
+        <div class="header-section">
+            <h1>Wenn Kultur erleben einfacher ist <br>
+                als dein Lieblingslied mitzusummen.
+            </h1>
 
-        </div>
-            
-            <div class="button_container">
-                <a href="/angebote.html" class="button_header">Start jetzt dein kulturelles Abenteuer!</a>
+            <div class="lead">
+                Als pulsierendes Herz der Kulturszene in Chur bringen wir frischen Wind in die lokale Kulturwelt <br> und vernetzen Künstler, Kreative und Kulturbegeisterte auf innovative Weise.
+
             </div>
-   </div>
+                
+                <div class="button_container">
+                    <a href="/angebote.html" class="button_header">Starte jetzt dein kulturelles Abenteuer!</a>
+                </div>
+        </div>
 
 
 
-    <!-- <div class="ausflüge">
-        <img id="ausflüge_bild" src="/img/bilder_homepage/ausfluege.png" alt="Bild einer Stadtfürung">
-    </div>
-    <div class="interaktive_erlebnisse">
-        <img id="interaktive_erlebnisse_bild" src="/img/bilder_homepage/interaktiv.png" alt="Bild einer Stadtfürung">
-    </div>
-    <div class="community_events">
-        <img id="community_events_bild" src="/img/bilder_homepage/community_events.png" alt="Bild einer Stadtfürung">
-    </div> -->
+        <!-- <div class="ausflüge">
+            <img id="ausflüge_bild" src="/img/bilder_homepage/ausfluege.png" alt="Bild einer Stadtfürung">
+        </div>
+        <div class="interaktive_erlebnisse">
+            <img id="interaktive_erlebnisse_bild" src="/img/bilder_homepage/interaktiv.png" alt="Bild einer Stadtfürung">
+        </div>
+        <div class="community_events">
+            <img id="community_events_bild" src="/img/bilder_homepage/community_events.png" alt="Bild einer Stadtfürung">
+        </div> -->
 
-    <article class="angebote_teaser">
+        <article class="angebote_teaser">
+            
+            <div class="teaser_text">
+                <p><strong>"Kulturnest" ist mehr als nur eine Plattform - </strong>es ist ein lebendiges Zentrum der kulturellen Vielfalt in Chur. Von aufregenden Veranstaltungen bis hin zu kreativen Workshops – wir bieten ein breites Spektrum an kulturellen Erlebnissen. Immer am Puls des kulturellen Geschehens, setzen wir auf innovative Konzepte, die Kreativität unserer Community und sind stets bestrebt, die Kultur in Chur auf einzigartige Weise zu bereichern und zu fördern.</p>
+            </div>
         
-        <div class="teaser_text">
-            <p><strong>"Kulturnest" ist mehr als nur eine Plattform – </strong>es ist ein lebendiges Zentrum der kulturellen Vielfalt in Chur. Von aufregenden Veranstaltungen bis hin zu kreativen Workshops – wir bieten ein breites Spektrum an kulturellen Erlebnissen. Immer am Puls des kulturellen Geschehens, setzen wir auf innovative Konzepte, die Kreativität unserer Community und sind stets bestrebt, die Kultur in Chur auf einzigartige Weise zu bereichern und zu fördern.</p>
-        </div>
-    
-        <div class="tiles">
-            <a class="tile" href="#"><img src="/img/bilder_angebot/Museumsbesuch.jpg"/>
-                <div class="details"><span class="title">Lorem Ipsum Dolor</span><span class="info">Quisque vel felis lectus donec vitae dapibus magna</span></div>
-            </a>
-            <a class="tile" href="#"><img src="/img/bilder_angebot/Wintermarkt.JPG"/>
-                <div class="details"><span class="title">Lorem Ipsum Dolor</span><span class="info">Quisque vel felis lectus donec vitae dapibus magna</span></div>
-            </a>
-            <a class="tile" href="#"><img src="/img/bilder_angebot/KleinesKonzert.JPG"/>
-                <div class="details"><span class="title">Lorem Ipsum Dolor</span><span class="info">Quisque vel felis lectus donec vitae dapibus magna</span></div>
-            </a>
-            <a class="tile" href="#"><img src="/img/bilder_angebot/Bouldern.jpg"/>
-                <div class="details"><span class="title">Lorem Ipsum Dolor</span><span class="info">Quisque vel felis lectus donec vitae dapibus magna</span></div>
-            </a>
-        </div>
-    </article>
+            <div class="tiles">
+                <a class="tile" href="#"><img src="/img/bilder_angebot/Museumsbesuch.jpg"/>
+                    <div class="details"><span class="title">Lorem Ipsum Dolor</span><span class="info">Quisque vel felis lectus donec vitae dapibus magna</span></div>
+                </a>
+                <a class="tile" href="#"><img src="/img/bilder_angebot/Wintermarkt.JPG"/>
+                    <div class="details"><span class="title">Lorem Ipsum Dolor</span><span class="info">Quisque vel felis lectus donec vitae dapibus magna</span></div>
+                </a>
+                <a class="tile" href="#"><img src="/img/bilder_angebot/KleinesKonzert.JPG"/>
+                    <div class="details"><span class="title">Lorem Ipsum Dolor</span><span class="info">Quisque vel felis lectus donec vitae dapibus magna</span></div>
+                </a>
+                <a class="tile" href="#"><img src="/img/bilder_angebot/Bouldern.jpg"/>
+                    <div class="details"><span class="title">Lorem Ipsum Dolor</span><span class="info">Quisque vel felis lectus donec vitae dapibus magna</span></div>
+                </a>
+            </div>
+
+            <div>
+                <p>Einfache Planung mit unserer Plattform
+                    - Wähle Deine Events mit nur ein paar Klicks
+                    - Kulturkalender und einfache Buchungsoptionen
+                    - Persönliches Konto für ein nahtloses Erlebnis auf unserer Plattform
+                    - Ändere Deine Pläne jederzeit – flexibel und unkompliziert</p>
 
 
-</article>
+            </div>
+
+
+        </article>
 
 
 
-   <article class="article-container">
-    
-    <div class="gleichgesinnte">
-        <div>
-            <h2>Verbinde dich mit Gleichgesinnten!</h2>
-            <p id="gleichgesinnte_text">"Bei kulturnest schaffen wir eine Brücke zwischen den Generationen. Unsere Plattform lädt Jung und Alt ein, gemeinsam die Kulturszene in Chur zu erkunden. Trau dich, deine Komfortzone zu verlassen und mit Menschen aller Altersgruppen in den Dialog zu treten – entdecke die Kultur in all ihren Facetten!"</p>
-        </div>
-      <img id="gleichgesinnte_bild" src="/img/bilder_homepage/kino_popcorn.png" alt="">
-    </div>
 
-    <div class="zugang">
-        <div>
-            <img id="zugang_bild" src="/img/bilder_homepage/ausstellung.jpg" alt="">
-        </div>
-        <div>
-            <h2>Einfacher Zugang zur Kulturwelt</h2>
-            <p id="zugang_text">"Unsere Plattform bietet dir eine übersichtliche Kartenansicht aller heutigen und wöchentlichen Events. Aber das ist noch nicht alles! Mit unserem monatlichen Veranstaltungs-Bingo kannst du neue Orte entdecken, dich mit Menschen unterschiedlicher Alters- und Interessensgruppen austauschen und ein vielfältiges Kulturnetzwerk aufbauen."</p>
-        </div>
+        <article class="article-container">
+            
+            <div class="gleichgesinnte">
+                <div>
+                    <h2>Verbinde dich mit Gleichgesinnten!</h2>
+                    <p id="gleichgesinnte_text">"Bei kulturnest schaffen wir eine Brücke zwischen den Generationen. Unsere Plattform lädt Jung und Alt ein, gemeinsam die Kulturszene in Chur zu erkunden. Trau dich, deine Komfortzone zu verlassen und mit Menschen aller Altersgruppen in den Dialog zu treten – entdecke die Kultur in all ihren Facetten!"</p>
+                </div>
+            <img id="gleichgesinnte_bild" src="/img/bilder_homepage/kino_popcorn.png" alt="">
+            </div>
 
-    </div>
+            <div class="zugang">
+                <div>
+                    <img id="zugang_bild" src="/img/bilder_homepage/ausstellung.jpg" alt="">
+                </div>
+                <div>
+                    <h2>Einfacher Zugang zur Kulturwelt</h2>
+                    <p id="zugang_text">"Unsere Plattform bietet dir eine übersichtliche Kartenansicht aller heutigen und wöchentlichen Events. Aber das ist noch nicht alles! Mit unserem monatlichen Veranstaltungs-Bingo kannst du neue Orte entdecken, dich mit Menschen unterschiedlicher Alters- und Interessensgruppen austauschen und ein vielfältiges Kulturnetzwerk aufbauen."</p>
+                </div>
 
-    </div>
-    
-    <script>
-        // JavaScript, um die Reihenfolge je nach Bildschirmbreite zu ändern
-        const zugangContainer = document.querySelector('.zugang');
-        const zugangBild = document.getElementById('zugang_bild');
-        const zugangText = document.getElementById('zugang_text');
-    
-        function updateOrder() {
-            if (window.innerWidth >= 1200) {
-                if (zugangBild.nextElementSibling !== zugangText) {
-                    zugangContainer.insertBefore(zugangBild, zugangText);
+            </div>
+
+            </div>
+            
+            <script>
+                // JavaScript, um die Reihenfolge je nach Bildschirmbreite zu ändern
+                const zugangContainer = document.querySelector('.zugang');
+                const zugangBild = document.getElementById('zugang_bild');
+                const zugangText = document.getElementById('zugang_text');
+            
+                function updateOrder() {
+                    if (window.innerWidth >= 1200) {
+                        if (zugangBild.nextElementSibling !== zugangText) {
+                            zugangContainer.insertBefore(zugangBild, zugangText);
+                        }
+                    } else {
+                        if (zugangBild.previousElementSibling !== zugangText) {
+                            zugangContainer.insertBefore(zugangText, zugangBild);
+                        }
+                    }
                 }
-            } else {
-                if (zugangBild.previousElementSibling !== zugangText) {
-                    zugangContainer.insertBefore(zugangText, zugangBild);
-                }
-            }
-        }
+            
+                // Initial aufrufen und bei Änderungen der Bildschirmbreite aktualisieren
+                updateOrder();
+                window.addEventListener('resize', updateOrder);
+            </script>
+
+            <div class="bingo">
+                <div>
+                    <h2>BINGO-SPECIAL</h2>
+                    <p id="bingo_artikel_text">"Mit "kulturnest" wird Kultur zum Abenteuer! Unser monatliches Veranstaltungs-Bingo führt Sie zu den verborgenen Schätzen Churs. Sammeln Sie Erlebnisse wie Perlen einer Kette und lassen Sie sich von uns zu immer neuen, inspirierenden Begegnungen führen. Kultur in Chur – es ist Zeit, sie neu zu entdecken!"</p>
+                </div>
+            <img id="bingo_artikel_bild" src="/img/bilder_homepage/bingo_winter.png" alt="">
+            </div>
+
+            <div class="kulturnest-card">
+                <div id="card_text">
+                    <h2>Exklusive Angebote nur für Dich!</h2>
+                    <p>Unsere Specials und Promotions bieten Dir einzigartige Erlebnisse und besondere Vorteile. Lass Dich überraschen und erlebe Kultur auf einem ganz neuen Level.</p>
+                </div>
+                <img src="/img/bilder_homepage/kulturnest_card.png" width="300px">
+            </div>
+
+            <div>
+                <a href="/ueberuns.html"><h2>lerne das “kulturnest-team” kennen</h2></a>   
+            </div>
+
+
+        </article>
+
     
-        // Initial aufrufen und bei Änderungen der Bildschirmbreite aktualisieren
-        updateOrder();
-        window.addEventListener('resize', updateOrder);
-    </script>
-
-    <div class="bingo">
-        <div>
-            <h2>BINGO-SPECIAL</h2>
-            <p id="bingo_artikel_text">"Mit "kulturnest" wird Kultur zum Abenteuer! Unser monatliches Veranstaltungs-Bingo führt Sie zu den verborgenen Schätzen Churs. Sammeln Sie Erlebnisse wie Perlen einer Kette und lassen Sie sich von uns zu immer neuen, inspirierenden Begegnungen führen. Kultur in Chur – es ist Zeit, sie neu zu entdecken!"</p>
-        </div>
-      <img id="bingo_artikel_bild" src="/img/bilder_homepage/bingo_winter.png" alt="">
-    </div>
-
-    <div class="kulturnest-card">
-        <div id="card_text">
-            <h2>Exklusive Angebote nur für Dich!</h2>
-            <p>Unsere Specials und Promotions bieten Dir einzigartige Erlebnisse und besondere Vorteile. Lass Dich überraschen und erlebe Kultur auf einem ganz neuen Level.</p>
-        </div>
-        <img src="/img/bilder_homepage/kulturnest_card.png" width="300px">
-    </div>
-
-    <div>
-        <a href="/ueberuns.html"><h2>lerne das “kulturnest-team” kennen</h2></a>   
-    </div>
-
-
-  </article>
-
-
-
-
-
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>  
 </main>
 
 <!--HIER ENDET DER INHALT DER SEITE-->
