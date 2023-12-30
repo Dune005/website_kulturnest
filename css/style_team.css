@@ -15,8 +15,6 @@
   
   html{ /*NICHT ANPASSEN!*/
     height:auto;
-    /* margin-left: 20vw;
-    margin-right: 20vw; */
     background-image: url('/img/voegel/vogel_weiss_transparent.png');
     background-size: contain; /* Das Bild wird gestreckt, um den gesamten Bildschirm zu bedecken */
     background-repeat: no-repeat; /* Das Bild wird nicht wiederholt */
@@ -25,7 +23,10 @@
 
   }
   
-  
+  body{
+    margin: 0;
+  }
+
     header{ /*NICHT ANPASSEN!*/
       width:100%;
       height: 280px;
@@ -40,9 +41,7 @@
       margin-top: 80px;
       margin-bottom: 100px;
     }
-  
-  
-  
+
     .logo{ /*NICHT ANPASSEN!*/
       width: 500px;
       height: auto;
@@ -100,7 +99,7 @@
     }
     .nav_links li a:hover {
       background-position: 0%;
-      background-color: #2F7CC0; /* Beim Hoveren auf Beige ändern */
+      background-color: #2F7CC0; /* Beim Hoveren auf blau ändern */
   
     }
     .nav_links li a:hover:before {
@@ -148,10 +147,8 @@
 
     h5{
       font-size: 16px;
-      font-weight: 650;
-      text-align: justify;
-      margin-top: 20px;
-      margin-bottom: 0px;
+      font-weight: 800;
+      text-align: left;
     }
   
     p{
@@ -173,12 +170,6 @@
         flex-direction: column; /* Ändert die Anordnung der Elemente in eine Spalte */
         align-items: flex-start; /* Linksbündige Ausrichtung der Elemente */
       }
-
-      #einleitung_textx{
-        flex: 1;
-        align-items: center;
-      }
- 
    
 
     .flex-container{
@@ -222,8 +213,31 @@
     }
 
     .vogel_klein_grün{
-      width: 50px;
+      width: 100px;
       height: auto;
+      margin-top: -130px;
+      margin-left: 120px;
+    }
+
+    .vogel_klein_rot{
+      width: 100px;
+      height: auto;
+      margin-top: -130px;
+      margin-left: 110px;
+    }
+
+    .vogel_klein_gelb{
+      width: 100px;
+      height: auto;
+      margin-top: -140px;
+      margin-left: 140px;
+    }
+
+    .vogel_klein_blau{
+      width: 100px;
+      height: auto;
+      margin-top: -130px;
+      margin-left: 115px;
     }
 
     /*Claudio Riz / NAdja Siegrist*/
@@ -238,19 +252,23 @@
     }
 
     .text_right_name{
-      font-size: 16px;
+      font-size: 22px;
       font-weight: 750px;
       text-align: left;
       margin-top: 20px;
       margin-bottom: 0px;
       color: black;
     }
+
+    .text_right_lead{
+      margin: 0px;
+     }
    
     .text_right_normal{
       font-size: 16px;
       font-weight: 750px;
       text-align: left;
-      margin-top: 20px;
+
       margin-bottom: 0px;
       color: black;
     }
@@ -294,7 +312,7 @@
   }
 
   .text_left_name{
-    font-size: 16px;
+    font-size: 22px;
     font-weight: 750px;
     text-align: left;
     margin-top: 20px;
@@ -302,6 +320,10 @@
     color: black;
   }
  
+  .text_left_lead{
+   margin: 0px;
+  }
+
   .text_left_normal{
     font-size: 16px;
     font-weight: 750px;
@@ -345,6 +367,7 @@
         font-size: 14px;
         text-align: left;
         margin-top: 29px;
+        
       }
     
       .social_media_icons{ /*NICHT ANPASSEN!*/
