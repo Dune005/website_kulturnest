@@ -182,12 +182,6 @@
    
 
     .flex-container{
-      /*display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      justify-content: center;
-      align-content: center;
-      width: 100vw;*/
       display: flex;
       align-items: center; 
       justify-content: center;
@@ -219,7 +213,7 @@
     .flex-item_text_left{
       margin: 20px;
       width: 100vw;
-      margin-left: 20vw;
+      margin-left: 15vw;
       display: flex;
       height: 700px;
       justify-content: left;
