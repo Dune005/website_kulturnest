@@ -182,11 +182,15 @@
    
 
     .flex-container{
-      display: flex;
+      /*display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
       justify-content: center;
-      width: 100vw;
+      align-content: center;
+      width: 100vw;*/
+      display: flex;
+      align-items: center; 
+      justify-content: center;
     }
 
     .flex-item_picture_left{
