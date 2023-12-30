@@ -1,22 +1,22 @@
 :root {
-  background-color: #242424;
-  --beige: rgba(255,210,153,1);
+  background-color: #F0E6DD;
+  --beige: rgb(63, 60, 55);
   --shadow-color: hsl(0deg 0% 0% / 0.5);
   }
   
   *{
       font-family: 'Lato', sans-serif;
       font-weight:400;
-      font-size:16px;
-      color:white;
+      font-size: 16px;
+      color:black;
     
       text-decoration:none;
     }
   
     html{ /*NICHT ANPASSEN!*/
       height:auto;
-      margin-left: 20vw;
-      margin-right: 20vw;
+      /* margin-left: 20vw;
+      margin-right: 20vw; */
       background-image: url('/img/voegel/vogel_weiss_transparent.png');
       background-size: contain; /* Das Bild wird gestreckt, um den gesamten Bildschirm zu bedecken */
       background-repeat: no-repeat; /* Das Bild wird nicht wiederholt */
@@ -76,7 +76,7 @@
       text-align: center;
       background-clip: text;
       -webkit-text-fill-color: transparent;
-      background-image: linear-gradient(to right, rgb(255,210,153,1), rgb(255,210,153,1) 50%, #fff 50%);
+      background-image: linear-gradient(to right, #F1952F, #F1952F 50%, #fff 50%);
       background-size: 200% 100%;
       background-position: -100%;
       transition: all 0.3s ease-in-out;
@@ -95,12 +95,12 @@
       bottom: -3px;
       z-index: 0;
       position: absolute;
-      background: var(--beige);
+      background: #F1952F;
       transition: all 0.3s ease-in-out;
     }
     .nav_links li a:hover {
       background-position: 0%;
-      background-color: var(--beige); /* Beim Hoveren auf Beige ändern */
+      background-color: #F1952F; /* Beim Hoveren auf Beige ändern */
   
     }
     .nav_links li a:hover:before {
@@ -108,9 +108,10 @@
     }
 
     .active {
-      color: var(--beige); /* Farbe für den aktiven Navigationspunkt */
+      color:#F1952F; /* Farbe für den aktiven Navigationspunkt */
       border-bottom-style: solid;
       border-bottom-width: 2px;
+  
   }
   
          
@@ -120,17 +121,22 @@
       text-align: center;
       margin-top: 50px;
       margin-bottom: 20px;
+      margin-left: 20vw;
+      margin-right: 20vw;
      }
 
      .lead_header{
       font-family: 'Lato', sans-serif;
       font-weight:400;
       font-size:24px;
-      color:white;
+      color:black;
       text-align: center;
-      margin: 20px;
-  
-    text-decoration:none;
+      margin: 40px;
+      margin-left: 20vw;
+      margin-right: 20vw;
+      text-decoration:none;
+      margin-top: 20px;
+      margin-bottom: 60px;
     }
 
       h2{
@@ -139,6 +145,7 @@
         text-align: left;
         margin-top: 20px;
         margin-bottom: 0px;
+        color: black;
       }
 
       h5{
@@ -162,75 +169,6 @@
         align-items: center; 
         justify-content: center;
       }
- 
-      .balken {
-        background-color: #fcd29b;
-        display: flex;
-        width: 1000px;
-        height: 650px;
-        align-items: center;
-        justify-content: center;
-        padding: 20px; 
-    }
-
-    .flex-container{
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      gap: 20px;
-      justify-content: center;
-    }
-
-    .flex-item{
-      margin: 20px;
-      width: 500px;
-    }
-        .kulturnest{
-          font-size: 20px;
-          font-weight: 800;
-          text-align: left;
-          margin-top: 20px;
-          margin-bottom: 0px;
-        }
-            .lead{
-              font-size: 16px;
-              font-weight: 750px;
-              text-align: left;
-              margin-top: 20px;
-              margin-bottom: 0px;
-            }
-            .text{
-              font-size: 16px;
-              font-weight: 400;
-              text-align: left;
-              margin-top: 10px;
-              margin-bottom: 30px;
-            }
-
-        .vision{
-          font-size: 20px;
-          font-weight: 800;
-          text-align: left;
-          margin-top: 20px;
-          margin-bottom: 0px; 
-        }    
-          
-
-      #nest_bildx{
-        width: 250px;
-        height: auto;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        margin-left: 450px;
-      }
-      
-      #nest_bild2x{
-        width: 250px;
-        height: auto;
-        margin-top: 0px;
-        margin-bottom: 20px;
-        margin-left: 700px;
-      }
 
       .einleitung {
         display: flex;
@@ -244,49 +182,177 @@
         align-items: center;
       }
 
-      .einleitung_film{
-        flex: 1;
-        align-items:center;
-      }
-
-    
-
-      .video_kulturnest {
-        width: calc(100% - 40px);
-        height: calc(100% - 40px); 
-        max-width: 100%; 
-        max-height: 100%; 
-        margin: auto; 
-        display: block;
+     .balken {
+        background-color: #F1952F;
+        border-radius: 10px;
+        display: flex;
+        width: 100vw;
+        height: 650px;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
     }
 
+    .video_kulturnest {
+      width: calc(100% - 40px);
+      height: calc(100% - 40px); 
+      max-width: 70%; 
+      max-height: 100%; 
+      margin: auto; 
+      display: block;
+      border-radius: 10px;
+  }
+
+    .balken2 {
+      background-color: #FFE1AC;
+      border-radius: 10px;
+      display: flex;
+      width: 100vw;
+      height: 320px;
+      align-items: center;
+      margin-top: 150px;
+    }
+  
+    .flex-item-breit{
+    max-width: 100%;
+    width: 850px;
+    margin-top: 20px;
+    margin-left: 20vw;
+    color: black;
+    align-items: center;
+    justify-content: center;
+  }
+
+    .flex-container{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      margin-right: 20vw;
+      margin-left: 20vw;
+      margin-top: 40px;
+    }
+
+    .lead{
+      font-size: 16px;
+      font-weight: 750px;
+      text-align: left;
+      margin-top: 20px;
+      margin-bottom: 0px;
+    }
+    
+    .text{
+      font-size: 16px;
+      font-weight: 400;
+      text-align: left;
+      margin-top: 10px;
+      margin-bottom: 30px;
+    }
+    
+    .vision{
+      width: 425px;
+    }
+
+    .kulturnest{
+      width: 425px;
+    }
+
+    .visionsbeschrieb{
+      display: flex;
+      gap: 50px;
+      flex-direction: row;
+    }
+        .nest-container{
+          display: flex;
+          flex-direction: row;
+        }
+        .nest{
+          margin-top: 0px;
+          margin-bottom: 20px;
+          height: 300px; /* schachtel mit kreis und text vergrössert */
+          
+        }
+        .nest:last-child{ /* unterer kreis */
+          position: relative;
+          left: -100px;
+          top: 170px;
+        }
+        .nest_bild{
+          position: relative;
+          top: 0px;
+          left: 0px;
+          width: 270px;  /* kreis vergrössert */
+          height: auto;
+
+      }
+      .nest-text{
+        position: relative;
+        top: -250px; /* px anzahl so verändern sodass der erste text im kreis mittig ist */
+        left: 0px;
+        text-align: center;
+        padding: 30px;
+      }
      
+      .team{
+        font-size: 20px;
+        font-weight: 800;
+        text-align: left;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        color: black;
+      }
+     
+      .lead-team{
+        font-size: 16px;
+        font-weight: 750px;
+        text-align: left;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        color: black;
+      }
+
+      .text-team{
+        font-size: 16px;
+        font-weight: 400;
+        text-align: left;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        color: black;
+      }
+
+      .hier{
+        color: black;
+      }
     
       /*Footerbereich*/
       footer {
          display: flex;
-         width: 100%;
          background-color: var(--blue);
-         color: white;
+         color:white;
          text-align: left;
          font-size: 10px;
          padding-top:10px;
          padding-bottom:10px;
          margin-top:10px;
-         border-top: 1px solid #ffffff; /* Dünne Linie mit der gewünschten Farbe (hier: #333) */
-         padding-bottom: 5px; /* Platz unterhalb der Linie */
+         border-top: 1px solid #F1952F; /* Dünne Linie mit der gewünschten Farbe (hier: #333) */
+         padding-bottom: 30px; /* Platz unterhalb der Linie */
          margin-top: 40px;
+         margin-right: 20vw;
+         margin-left: 20vw;
+         
       }
     
       .adresse_footer{ /*NICHT ANPASSEN!*/
         flex: 2;
-        font-size: 14px;
+        font-size: 16px;
       }
     
     
       .weitere_links{ /*NICHT ANPASSEN!*/
         flex: 3;
-        font-size: 14px;
+        font-size: 16px;
         text-align: left;
         margin-top: 29px;
       }
