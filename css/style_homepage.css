@@ -75,10 +75,10 @@ background-color: black;
   text-decoration: none;
   display: block;
   padding: 5px 0px;
-  font-family: "Open Sans";
+  font-family: 'Lato', sans-serif;
   font-size: 26px;
   line-height: 1;
-  font-weight: bold;
+  font-weight: 800;
   position: relative;
   z-index: 1;
   text-align: center;
@@ -116,7 +116,7 @@ background-color: black;
 }
 
   h1{ /*NICHT ANPASSEN!*/
-    font-size: 60px;
+    font-size: 80px;
     font-weight: 800;
     text-align: center;
     margin-top: 50px;
@@ -124,7 +124,7 @@ background-color: black;
   }
 
   h2{
-    font-size: 20px;
+    font-size: 40px;
     font-weight: 800;
     text-align: left;
     margin-top: 0px;
@@ -132,8 +132,8 @@ background-color: black;
   }
 
   p{
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 200;
     text-align: left;
     margin-top: 10px;
     margin-bottom: 30px;
@@ -162,14 +162,12 @@ background-color: black;
 
   .angebote_teaser {
     display: flex;
-    flex-direction: row; /* Ändert die Anordnung der Elemente in eine Spalte */
     align-items: center; /* Zentriert die Elemente horizontal */
     justify-content: center; /* Zentriert die Elemente vertikal */
     margin: 0;
     padding: 0;
     background-color: var(--beige);
     min-height: 500px; /* Mindesthöhe des Teasers, um Platz für die Boxen zu schaffen */
-    border-radius: 10px;
     width: 100vw;
     position: relative;
     left: 50%;
@@ -191,7 +189,6 @@ background-color: black;
   }
   
   .teaser_text p {
-    flex: 2;
     margin-left: 10vw;
     margin-right: 10vw;
     margin-bottom: 5%;
@@ -208,16 +205,58 @@ background-color: black;
     font-weight: 800;
 }
 
+.teaser_erklärung_text {
+  display: flex;
+  align-items: center; /* Zentriert die Elemente horizontal */
+  justify-content: center; /* Zentriert die Elemente vertikal */
+  margin: 0;
+  padding: 0;
+  background-color: var(--beige);
+  min-height: 300px; /* Mindesthöhe des Teasers, um Platz für die Boxen zu schaffen */
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  margin-bottom: 100px;
+  /*background-image: url(/img/flowers/flower_orange2.svg);*/
+  background-size: cover; /* Das Bild wird proportioniert und deckt den Teaser ab */
+  background-repeat: no-repeat; /* Das Bild wird nicht wiederholt */
+  background-position: center; /* Das Bild wird horizontal und vertikal zentriert */
+  
+
+}
+
+.teaser_erklärung_text p {
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  font-size: 30px;
+  font-weight: 200;
+  color: black;
+}
+
+.teaser_erklärung_text strong {
+  font-weight: bold; /* Fettgedruckte Schrift */
+  color: black;
+  font-size: 40px;
+  font-weight: 800;
+}
+
 /* Angebotsboxen mit Hover-Effekt START */
 
 .tiles {
   display: flex;
+  flex: 6;
   flex-wrap: wrap;
   justify-content: center; /* Zentriert die Tiles horizontal */
   align-items: center; /* Zentriert die Tiles vertikal */
   max-width: 1000px; /* Begrenze die Breite der Tiles */
   margin: 0 auto; /* Zentriert die Tiles horizontal auf der Seite */
   margin-bottom: 50px;
+
 }
 
 
@@ -384,62 +423,61 @@ background-color: black;
 
   .kulturnest-card {
     display: flex;
-    align-items: center;
-    background-color: var(--beige); /* Hintergrundfarbe in Beige */
-    max-width: 600px;
-    height: auto;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    padding: 40px;
-    border-radius: 10px;
-    position: relative; /* Position relativ setzen */
-    transition: background-color 0.3s; /* Fügt eine sanfte Übergangsanimation hinzu */
+    flex-direction: row; /* Ändert die Anordnung der Elemente in eine Spalte */
+    align-items: center; /* Zentriert die Elemente horizontal */
+    justify-content: center; /* Zentriert die Elemente vertikal */
+    margin: 0;
+    padding: 0;
+    background-color: var(--beige);
+    min-height: 700px; /* Mindesthöhe des Teasers, um Platz für die Boxen zu schaffen */
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    margin-bottom: 100px;
+    background-image: url(/img/flowers/flower_orange2.svg);
+    background-size: cover; /* Das Bild wird proportioniert und deckt den Teaser ab */
+    background-repeat: no-repeat; /* Das Bild wird nicht wiederholt */
+    background-position: center; /* Das Bild wird horizontal und vertikal zentriert */
+  }
+
+  .hover-enlarge {
+    transition: transform 0.3s ease-in-out; /* Fügt eine sanfte Übergangseffekt hinzu */
   }
   
-  /* Pseudo-Element für das Overlay beim Hovern */
-  .kulturnest-card {
-    display: flex;
-    background-color: var(--beige); /* Hintergrundfarbe in Beige */
-    max-width: 600px;
-    height: auto;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    padding: 40px;
-    border-radius: 10px;
-    position: relative; /* Position relativ setzen */
-    overflow: hidden; /* Überlauf ausblenden, um die Farbe beim Hovern zu verstecken */
-    transition: background-color 0.3s; /* Fügt eine sanfte Übergangsanimation hinzu */
+  .hover-enlarge:hover {
+    transform: scale(1.1); /* Vergrößert das Bild um 10% beim Überfahren mit der Maus */
   }
   
-  /* Pseudo-Element für das Overlay beim Hovern */
-  .kulturnest-card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(230, 107, 0, 0.3); /* Halbtransparente Overlay-Farbe */
-    border-radius: 10px;
-    opacity: 0; /* Standardmäßig unsichtbar */
-    transition: opacity 0.3s; /* Übergang für die Opazität hinzufügen */
-  }
-  
-  .kulturnest-card:hover::before {
-    opacity: 1; /* Overlay beim Hovern sichtbar machen */
-  }
-  
+
   #card_text {
     color: #000000; /* Textfarbe auf Schwarz setzen */
     background-color: transparent; /* Hintergrundfarbe des Textes auf transparent setzen */
     position: relative; /* Position relativ setzen */
     z-index: 1; /* Über dem Overlay platzieren */
-    margin-right: 50px;
+    max-width: 600px;
+    margin-right: 100px;
   }
   
 
-  .kulturnest-card h2, .kulturnest-card p{
+  .kulturnest-card h2 {
     color: black;
+    font-size: 40px;
+  }
+
+  .kulturnest-card p{
+    color: black;
+    font-size: 30px;
+    font-weight: 300;
+  }
+
+  .kulturnest-card img {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 100px;
   }
 
 
@@ -471,9 +509,9 @@ background-color: black;
     color: #000000;
     cursor: pointer;
     display: inline-flex;
-    font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 16px;
-    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
     justify-content: center;
     line-height: 1.25;
     margin: 0;
@@ -553,34 +591,61 @@ background-color: black;
   border-top: 1px solid #ffffff; /* Dünne Linie mit der gewünschten Farbe (hier: #333) */
   padding-bottom: 5px; /* Platz unterhalb der Linie */
   margin-top: 100px;
+  padding-bottom: 60px !important; /* Hinzufügen von !important */
 }
 
 .footer_adresse { /*NICHT ANPASSEN!*/
-  flex: 2;
-  font-size: 14px;
+  flex: 6;
+  font-size: 20px;
+  font-weight: 300;
   margin-right: 20px;
+  line-height: 1.5; /* Beispielwert für die Zeilenhöhe, passe ihn nach Bedarf an */
+
 }
 
-.footer_logo { /*NICHT ANPASSEN!*/
-  flex: 2; /* Das Logo soll nicht flexibel in der Größe sein und seine natürliche Größe beibehalten */
-  width: 100%; /* Die Breite auf 100% setzen, um den verfügbaren Platz auszufüllen */
+.footer_adresse a { /*NICHT ANPASSEN!*/
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5; /* Beispielwert für die Zeilenhöhe, passe ihn nach Bedarf an */
+
+}
+
+.footer_logo {
+  flex: 6; /* Der .footer_logo-Bereich ist flexibel und passt sich an die verfügbare Breite an */
   max-width: 100%; /* Die maximale Breite auf 100% setzen, um sicherzustellen, dass es nicht breiter als der Container wird */
 }
 
-.weitere_links { /*NICHT ANPASSEN!*/
-  flex: 2;
-  font-size: 14px;
-  text-align: left;
+.footer_logo img {
+  width: auto; /* Die Breite des Logos auf die native Breite festlegen */
+  height: auto; /* Die Höhe wird automatisch angepasst, um das Seitenverhältnis zu erhalten */
+  max-width: 50%; /* Optional: Die maximale Breite auf 100% setzen, um sicherzustellen, dass es nicht breiter als der Container wird */
 }
 
-.social_media_icons { /*NICHT ANPASSEN!*/
-  flex: 2;
-  justify-content: flex-end; /* Die Icons rechts ausrichten */
-  font-size: 10px;
+.weitere_links{
+  flex: 4;
+}
+
+.weitere_links a {
+  font-size: 20px;
+  font-weight: 300;
+  text-align: left;
+  line-height: 1.5; /* Beispielwert für die Zeilenhöhe, passe ihn nach Bedarf an */
+}
+
+.weitere_links a:hover {
+  text-decoration: underline; /* Unterstreichen, wenn die Maus darüber schwebt */
+  color: var(--beige); /* Textfarbe beim Überfahren mit der Maus */
+}
+
+.social_media_icons-container {
+  display: flex;
+  flex: 3;
+  justify-content: flex-end; /* Icons am rechten Rand ausrichten */
 }
 
 .social_media_icons img { /*NICHT ANPASSEN!*/
-  width: 30px;
+  width: 50px;
+
 }
 
 
