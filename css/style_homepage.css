@@ -31,11 +31,6 @@ background-color: black;
     top: 0;
     left: 0;
     z-index: 100;
-    /*
-    background-image: url('/img/voegel/vogel_weiss.svg');
-    background-repeat: no-repeat;
-    background-position: 0% 5%;
-    background-size: 20%; */
   }
 
 
@@ -90,7 +85,6 @@ background-color: black;
   transition: all 0.3s ease-in-out;
   background-color: transparent; /* Standard-Hintergrundfarbe */
   transition: background-color 0.3s ease-in-out; /* Übergangsanimation für die Hintergrundfarbe */
-
 }
 
 .nav_links li a:before {
@@ -497,6 +491,13 @@ background-color: black;
     margin-top: 40px;
     margin-bottom: 100px;
   }
+
+  .gruppenbild img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 100px;
+  }
   
   .button_header {
     align-items: center;
@@ -650,34 +651,6 @@ background-color: black;
 
 
 
-
-
-
-  @media (max-width: 1200px) {
-    .gleichgesinnte,
-    .zugang,
-    .bingo {
-      flex-direction: column; /* Ändert die Anordnung der Elemente in eine Spalte */
-      align-items: flex-start; /* Linksbündige Ausrichtung der Elemente */
-      margin-bottom: 150px;
-    }
-
-
-    .zugang {
-      flex-direction: column-reverse; /* Ändert die Anordnung der Elemente in eine Spalte und kehrt die Reihenfolge um */
-      align-items: flex-start; /* Linksbündige Ausrichtung der Elemente */
-      margin-bottom: 150px;
-    }
-    
-    #zugang_text {
-      order: 2; /* Ändert die Reihenfolge des Textes auf 2 (nach dem Bild) */
-    }
-    
-    #zugang_bild {
-      order: 1; /* Ändert die Reihenfolge des Bildes auf 1 (vor dem Text) */
-    }
-  }
-
   @media (max-width: 1800px) {
     .wrapper {
       display: grid;
@@ -712,4 +685,104 @@ background-color: black;
     #card_text {
       margin-right: 0; /* Entfernt den rechten Abstand für schmalere Bildschirme */
     }
+  }
+
+
+
+  @media (max-width: 1200px) {
+    .gleichgesinnte,
+    .zugang,
+    .bingo {
+      flex-direction: column; /* Ändert die Anordnung der Elemente in eine Spalte */
+      align-items: flex-start; /* Linksbündige Ausrichtung der Elemente */
+      margin-bottom: 150px;
+    }
+
+
+    .zugang {
+      flex-direction: column-reverse; /* Ändert die Anordnung der Elemente in eine Spalte und kehrt die Reihenfolge um */
+      align-items: flex-start; /* Linksbündige Ausrichtung der Elemente */
+      margin-bottom: 150px;
+    }
+    
+    #zugang_text {
+      order: 2; /* Ändert die Reihenfolge des Textes auf 2 (nach dem Bild) */
+    }
+    
+    #zugang_bild {
+      order: 1; /* Ändert die Reihenfolge des Bildes auf 1 (vor dem Text) */
+    }
+
+    h1{
+      font-size: 50px;
+      font-weight: 800;
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 0px;
+    }
+
+  }
+
+  @media (max-width: 800px) {
+
+    html{
+      height:auto;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    h1{
+      font-size: 40px;
+      font-weight: 800;
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 0px;
+    }
+
+    .logo {
+      max-width: 500px;
+      width: 100%;
+      height: auto;
+      padding-top: 20px;
+      margin: 0 auto;
+      display: block;
+    }
+
+    #gleichgesinnte_bild, #bingo_artikel_bild, #zugang_bild {
+      width: 100%; /* Die Breite auf 100% setzen, um den verfügbaren Platz auf kleinen Bildschirmen einzunehmen */
+      margin: 0 auto; /* Das Bild horizontal zentrieren */
+    }
+
+    .nav_links li a {
+      font-size: 20px;
+    }
+
+    .tiles .tile img {
+      display: block;
+      width: 150px; /* Gewünschte Breite */
+      height: 200px; /* Gewünschte Höhe */
+      object-fit: cover; /* Beibehalten des Seitenverhältnisses und Beschneiden des Bildes, um es in das festgelegte Rechteck zu passen */
+    }
+
+    .teaser_erklärung_text p {
+      font-size: 20px;
+      font-weight: 300;
+    }
+    
+    .teaser_erklärung_text strong {
+      font-size: 30px;
+      font-weight: 800;
+    }
+
+    .teaser_text p {
+      font-size: 20px;
+      font-weight: 300;
+    }
+  
+    .teaser_text strong {
+
+      font-size: 30px;
+      font-weight: 800;
+  }
+
   }
