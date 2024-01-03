@@ -162,7 +162,7 @@
  .zentriert{
         display: flex;
         align-items: center; 
-        justify-content: center;
+        justify-content: left;
       }
 
       .einleitung {
@@ -175,7 +175,13 @@
     .flex-container{
       display: flex;
       align-items: center; 
-      justify-content: center;
+      justify-content: left;
+    }
+
+    .flex-container2{
+      display: flex;
+      align-items: center; 
+      justify-content: right;
     }
 
     .flex-item_picture_left{
@@ -184,15 +190,14 @@
       display: flex;
       margin-right: 100px;
       justify-content: right;
-      align-content: center;
-      margin-left: 15vw;
+      align-items: center
     }
 
     .flex-item_text_right{
       width: 100vw;
-      margin-right: 20vw;
+      margin-right: 5vw;
       display: flex;
-      justify-content: right;
+      justify-content: center;
     }
      
     .flex-item_picture_right{
@@ -202,9 +207,10 @@
     }
 
     .flex-item_text_left{
-      margin: 20px;
+      margin-top:20px;
+      margin-bottom: 20px;
       width: 100vw;
-      margin-left: 15vw;
+      margin-left: 18vw;
       display: flex;
       height: 700px;
       justify-content: left;
@@ -277,20 +283,20 @@
       background-color: #98b2cd;
       border-radius: 10px;
       display: flex;
-      width: 100vw;
+      width: 90vw;
       height: 600px;
       align-items: center;
-      justify-content: center;
+      justify-content:left;
   }
 
   .balken2 {
-    background-color: #3675ad;
+    background-color: #2F7CC0;
     border-radius: 10px;
     display: flex;
-    width: 100vw;
+    width: 90vw;
     height: 600px;
     align-items: center;
-    justify-content: center;
+    justify-content:left;
 }
   
   .portrait_left{
@@ -358,16 +364,23 @@
     
       .adresse_footer{ /*NICHT ANPASSEN!*/
         flex: 2;
-        font-size: 14px;
+        font-size: 16px;
       }
     
     
-      .weitere_links{ /*NICHT ANPASSEN!*/
+      .weitere_links { /*NICHT ANPASSEN!*/
         flex: 3;
         font-size: 14px;
         text-align: left;
         margin-top: 29px;
-        
+        transition: all 0.3s ease-in-out;
+      }
+
+      .weitere_links :hover{ /*NICHT ANPASSEN!*/
+        flex: 3;
+        text-align: left;
+        margin-top: 29px;
+        columns: #2F7CC0;
       }
     
       .social_media_icons{ /*NICHT ANPASSEN!*/
