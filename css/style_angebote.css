@@ -248,8 +248,11 @@
         flex: 1;
         align-items:center;
       }
+#einleitung_bild{
+  width: 300px;
+  height: auto;
+}
 
-    
 
       .video_kulturnest {
         width: calc(100% - 40px);
