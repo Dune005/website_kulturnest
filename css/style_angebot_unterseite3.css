@@ -1,0 +1,321 @@
+:root {
+    background-color: #242424;
+    --beige: rgba(255,210,153,1);
+    --shadow-color: hsl(0deg 0% 0% / 0.5);
+    }
+    
+    *{
+        font-family: 'Lato', sans-serif;
+        font-weight:400;
+        font-size:16px;
+        color:white;
+      
+        text-decoration:none;
+      }
+    
+      html{ /*NICHT ANPASSEN!*/
+        height:auto;
+        margin-left: 20vw;
+        margin-right: 20vw;
+        background-image: url('/img/voegel/vogel_weiss_transparent.png');
+        background-size: contain; /* Das Bild wird gestreckt, um den gesamten Bildschirm zu bedecken */
+        background-repeat: no-repeat; /* Das Bild wird nicht wiederholt */
+        background-attachment: fixed; /* Das Bild bleibt statisch */
+        height: 100%;
+    
+      }
+    
+    
+      header{ /*NICHT ANPASSEN!*/
+        width:100%;
+        height: 280px;
+        top: 0;
+        left: 0;
+        z-index: 100;
+      }
+  
+      main{
+        width:100%;
+        height: 100%;
+        margin-top: 80px;
+        margin-bottom: 100px;
+      }
+    
+    
+    
+      .logo{ /*NICHT ANPASSEN!*/
+        width: 500px;
+        height: auto;
+        padding-top: 20px;
+        margin: 0 auto;
+        display: block;    
+      }
+    
+      .nav_links{ 
+        display:flex;
+        flex-wrap: wrap;
+        list-style:none;
+        padding: 0;
+        justify-content: center;
+      }
+    
+      .nav_links li {
+        margin: 0 15px;
+        position: relative;
+      }
+      .nav_links li a {
+        text-decoration: none;
+        display: block;
+        padding: 5px 0px;
+        font-family: "Open Sans";
+        font-size: 26px;
+        line-height: 1;
+        font-weight: bold;
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: linear-gradient(to right, rgb(255,210,153,1), rgb(255,210,153,1) 50%, #fff 50%);
+        background-size: 200% 100%;
+        background-position: -100%;
+        transition: all 0.3s ease-in-out;
+        background-color: transparent; /* Standard-Hintergrundfarbe */
+        transition: background-color 0.3s ease-in-out; /* Übergangsanimation für die Hintergrundfarbe */
+      
+      }
+  
+    
+      .nav_links li a:before {
+        display: block;
+        content: "";
+        width: 0;
+        height: 3px;
+        bottom: 5px;
+        left: 0;
+        bottom: -3px;
+        z-index: 0;
+        position: absolute;
+        background: var(--beige);
+        transition: all 0.3s ease-in-out;
+      }
+      .nav_links li a:hover {
+        background-position: 0%;
+        background-color: var(--beige); /* Beim Hoveren auf Beige ändern */
+    
+      }
+      .nav_links li a:hover:before {
+        width: 100%;
+      }
+  
+      .active {
+        color: var(--beige); /* Farbe für den aktiven Navigationspunkt */
+        border-bottom-style: solid;
+        border-bottom-width: 2px;
+    }
+    
+           
+        h1{ /*NICHT ANPASSEN!*/
+        font-size: 45px;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 20px;
+       }
+  
+       .lead_header{
+        font-family: 'Lato', sans-serif;
+        font-weight:400;
+        font-size:24px;
+        color:white;
+        text-align: center;
+        margin: 20px;
+    
+      text-decoration:none;
+      }
+  
+        h2{
+          font-size: 20px;
+          font-weight: 800;
+          text-align: left;
+          margin-top: 20px;
+          margin-bottom: 0px;
+        }
+  
+        h5{
+          font-size: 16px;
+          font-weight: 650;
+          text-align: justify;
+          margin-top: 20px;
+          margin-bottom: 0px;
+        }
+      
+        p{
+          font-size: 16px;
+          font-weight: 400;
+          text-align: justify;
+          margin-top: 10px;
+          margin-bottom: 30px;
+        }
+   .zentriert{
+          display: flex;
+          align-items: center; 
+          justify-content: center;
+        }
+   
+        .balken {
+          background-color: #fcd29b;
+          display: flex;
+          width: 1000px;
+          height: 650px;
+          align-items: center;
+          justify-content: center;
+          padding: 20px; 
+      }
+  
+      .flex-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 20px;
+        justify-content: center;
+      }
+  
+      .flex-item{
+        margin: 20px;
+        width: 500px;
+      }
+          .kulturnest{
+            font-size: 20px;
+            font-weight: 800;
+            text-align: left;
+            margin-top: 20px;
+            margin-bottom: 0px;
+          }
+              .lead{
+                font-size: 16px;
+                font-weight: 750px;
+                text-align: left;
+                margin-top: 20px;
+                margin-bottom: 0px;
+              }
+              .text{
+                font-size: 16px;
+                font-weight: 400;
+                text-align: left;
+                margin-top: 10px;
+                margin-bottom: 30px;
+              }
+  
+          .vision{
+            font-size: 20px;
+            font-weight: 800;
+            text-align: left;
+            margin-top: 20px;
+            margin-bottom: 0px; 
+          }    
+            
+  
+        #nest_bildx{
+          width: 250px;
+          height: auto;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          margin-left: 450px;
+        }
+        
+        #nest_bild2x{
+          width: 250px;
+          height: auto;
+          margin-top: 0px;
+          margin-bottom: 20px;
+          margin-left: 700px;
+        }
+  
+        .einleitung {
+          display: flex;
+          flex-direction: column; /* Ändert die Anordnung der Elemente in eine Spalte */
+          align-items: flex-start; /* Linksbündige Ausrichtung der Elemente */
+        }
+      
+  
+        #einleitung_textx{
+          flex: 1;
+          align-items: center;
+        }
+  
+        .einleitung_film{
+          flex: 1;
+          align-items:center;
+        }
+        #einleitung_bild{
+          width: 500px;
+          height: auto;
+          margin: 20 30 20 30
+        }
+  
+  
+        .video_kulturnest {
+          width: calc(100% - 40px);
+          height: calc(100% - 40px); 
+          max-width: 100%; 
+          max-height: 100%; 
+          margin: auto; 
+          display: block;
+      }
+  
+       
+      
+        /*Footerbereich*/
+        footer {
+           display: flex;
+           width: 100%;
+           background-color: var(--blue);
+           color: white;
+           text-align: left;
+           font-size: 10px;
+           padding-top:10px;
+           padding-bottom:10px;
+           margin-top:10px;
+           border-top: 1px solid #ffffff; /* Dünne Linie mit der gewünschten Farbe (hier: #333) */
+           padding-bottom: 5px; /* Platz unterhalb der Linie */
+           margin-top: 40px;
+        }
+      
+        .adresse_footer{ /*NICHT ANPASSEN!*/
+          flex: 2;
+          font-size: 14px;
+        }
+      
+      
+        .weitere_links{ /*NICHT ANPASSEN!*/
+          flex: 3;
+          font-size: 14px;
+          text-align: left;
+          margin-top: 29px;
+        }
+      
+        .social_media_icons{ /*NICHT ANPASSEN!*/
+          flex: 2;
+          font-size: 10px;
+          margin-top: 20px;
+        }
+      
+        .social_media_icons img{ /*NICHT ANPASSEN!*/
+          width: 30px;
+        }
+  
+        .einleitung {
+          display: flex;
+          justify-content: space-between;
+          align-items: left;
+          margin-bottom: 20px;
+        }
+
+        #einleitung_bild {
+          flex: unset; /* Auf 'unset' setzen, um das vorherige Flex-Verhalten aufzuheben */
+          margin-right: 20px;
+          max-width: 100%;
+          border-radius: 10px;
+      }
+   

@@ -40,6 +40,10 @@
       margin-top: 80px;
       margin-bottom: 100px;
     }
+
+    p2{
+      color: var(--beige);
+    }
   
   
   
@@ -134,12 +138,13 @@
     text-decoration:none;
     }
 
-      h2{
-        font-size: 20px;
-        font-weight: 800;
-        text-align: left;
-        margin-top: 20px;
-        margin-bottom: 0px;
+
+        h2{
+          font-size: 40px;
+          font-weight: 800;
+          text-align: left;
+          margin-top: 0px;
+          margin-bottom: 0px;
       }
 
       h5{
@@ -151,9 +156,9 @@
       }
     
       p{
-        font-size: 16px;
-        font-weight: 400;
-        text-align: justify;
+        font-size: 20px;
+        font-weight: 200;
+        text-align: left;
         margin-top: 10px;
         margin-bottom: 30px;
       }
@@ -242,6 +247,7 @@
       #einleitung_textx{
         flex: 1;
         align-items: center;
+        background-color: var(--beige);
       }
 
       .einleitung_film{
@@ -303,3 +309,79 @@
       .social_media_icons img{ /*NICHT ANPASSEN!*/
         width: 30px;
       }
+
+      .einleitung {
+        display: flex;
+        justify-content: space-between;
+        align-items: left;
+        margin-bottom: 20px;
+      }
+      
+      /* Style for the text container */
+      .einleitung div {
+        max-width: 60%; /* Adjust as needed */
+      }
+      
+      /* Style for the image */
+      .einleitung img {
+        max-width: 100%; /* Adjust as needed */
+        box-shadow: none; /* Initial box-shadow */
+        transition: box-shadow 0.3s ease, transform 0.3s ease; /* Transition for box-shadow and transform */
+      }
+      
+      /* Hover effect for the image */
+      .einleitung img:hover {
+        box-shadow: 0 0 10px --shadow-color; /* Shadow effect on hover */
+        transform: scale(1.05); /* Slight increase in size on hover */
+      }
+      
+      /* Additional styles for better responsiveness */
+      @media (max-width: 768px) {
+        .einleitung {
+          flex-direction: column;
+          text-align: left;
+        }
+      
+        .einleitung img {
+          max-width: 100%;
+          margin-bottom: 10px;
+        
+        }
+      
+        .einleitung div {
+          max-width: 100%;
+        }
+      }
+      .einleitung {
+        display: flex;
+        flex-direction: row; /* Ändert die Anordnung der Elemente in eine Zeile */
+        align-items: flex-start; /* Linksbündige Ausrichtung der Elemente */
+        margin-bottom: 150px;
+        margin-top: 100px;
+    }
+    
+    #einleitung_bild {
+        flex: unset; /* Auf 'unset' setzen, um das vorherige Flex-Verhalten aufzuheben */
+        margin-right: 20px;
+        width: 400px;
+        border-radius: 10px;
+        max-width: 100%;
+        height: auto;
+    }
+    
+    #einleitung_text {
+        flex: 1;
+        margin-right: 20px;
+    }
+    
+    #einleitung_text h2 {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    
+    #einleitung_text p {
+        font-size: 16px;
+    }
+
+      
+      
