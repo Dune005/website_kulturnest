@@ -503,7 +503,7 @@ background-color: black;
   .button_header {
     align-items: center;
     background-clip: padding-box;
-    background-color: #EED5A7;
+    background-color: #f28c0f;
     border: 1px solid transparent;
     border-radius: .25rem;
     box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
@@ -531,7 +531,7 @@ background-color: black;
 
   .button_header:hover,
   .button_header:focus {
-    background-color: #fb8332;
+    background-color: #F0E6DD;
     box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
   }
   
@@ -540,7 +540,7 @@ background-color: black;
   }
   
   .button_header:active {
-    background-color: #c85000;
+    background-color: #f28c0f;
     box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
     transform: translateY(0);
   }
