@@ -17,7 +17,7 @@
       height:auto;
       margin-left: 20vw;
       margin-right: 20vw;
-      background-image: url('/img/voegel/vogel_weiss_transparent.png');
+      background-image: url('/img/voegel/vogel_weiss_transparent_60.png');
       background-size: contain; /* Das Bild wird gestreckt, um den gesamten Bildschirm zu bedecken */
       background-repeat: no-repeat; /* Das Bild wird nicht wiederholt */
       background-attachment: fixed; /* Das Bild bleibt statisch */
@@ -41,7 +41,9 @@
       margin-bottom: 100px;
     }
   
-  
+    p2{
+      color: var(--beige);
+    }
   
     .logo{ /*NICHT ANPASSEN!*/
       width: 500px;
@@ -76,7 +78,7 @@
       text-align: center;
       background-clip: text;
       -webkit-text-fill-color: transparent;
-      background-image: linear-gradient(to right, rgb(255,210,153,1), rgb(255,210,153,1) 50%, #fff 50%);
+      background-image: linear-gradient(to right, #00a07e, #00a07e 50%, #000 50%);
       background-size: 200% 100%;
       background-position: -100%;
       transition: all 0.3s ease-in-out;
@@ -95,12 +97,12 @@
       bottom: -3px;
       z-index: 0;
       position: absolute;
-      background: var(--beige);
+      background: #00a07e;
       transition: all 0.3s ease-in-out;
     }
     .nav_links li a:hover {
       background-position: 0%;
-      background-color: var(--beige); /* Beim Hoveren auf Beige ändern */
+      background-color: #00a07e; /* Beim Hoveren auf Beige ändern */
   
     }
     .nav_links li a:hover:before {
@@ -108,7 +110,7 @@
     }
 
     .active {
-      color: var(--beige); /* Farbe für den aktiven Navigationspunkt */
+      color: #00a07e; /* Farbe für den aktiven Navigationspunkt */
       border-bottom-style: solid;
       border-bottom-width: 2px;
   }
