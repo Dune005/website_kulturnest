@@ -79,7 +79,7 @@ background-color: black;
   text-align: center;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(to right, rgb(255,210,153,1), rgb(255,210,153,1) 50%, #fff 50%);
+  background-image: linear-gradient(to right, #F0E6DD,#F0E6DD 50%, #fff 50%);
   background-size: 200% 100%;
   background-position: -100%;
   transition: all 0.3s ease-in-out;
