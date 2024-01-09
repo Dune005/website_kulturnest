@@ -17,7 +17,7 @@ background-color: black;
     height:auto;
     margin-left: 20vw;
     margin-right: 20vw;
-    background-image: url('/img/voegel/vogel_weiss_transparent.png');
+    background-image: url('/img/voegel/vogel_weiss_transparent_30.png');
     background-size: contain; /* Das Bild wird gestreckt, um den gesamten Bildschirm zu bedecken */
     background-repeat: no-repeat; /* Das Bild wird nicht wiederholt */
     background-attachment: fixed; /* Das Bild bleibt statisch */
@@ -111,7 +111,7 @@ background-color: black;
 }
 
   h1{ /*NICHT ANPASSEN!*/
-    font-size: 80px;
+    font-size: 60px;
     font-weight: 800;
     text-align: center;
     margin-top: 50px;
@@ -720,6 +720,14 @@ background-color: black;
       text-align: center;
       margin-top: 50px;
       margin-bottom: 0px;
+    }
+
+    .button_header {
+      font-size: 25px;
+      align-items: center; /* Für die vertikale Zentrierung hinzufügen */
+      justify-content: center; /* Für die horizontale Zentrierung beibehalten */
+      text-align: center;
+    
     }
 
   }

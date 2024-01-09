@@ -15,7 +15,7 @@
   
   html{ /*NICHT ANPASSEN!*/
     height:auto;
-    background-image: url('/img/voegel/vogel_weiss_transparent.png');
+    background-image: url('/img/voegel/vogel_weiss_transparent_60.png');
     background-size: contain; /* Das Bild wird gestreckt, um den gesamten Bildschirm zu bedecken */
     background-repeat: no-repeat; /* Das Bild wird nicht wiederholt */
     background-attachment: fixed; /* Das Bild bleibt statisch */
