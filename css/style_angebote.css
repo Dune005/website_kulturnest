@@ -80,7 +80,7 @@
       text-align: center;
       background-clip: text;
       -webkit-text-fill-color: transparent;
-      background-image: linear-gradient(to right, rgb(255,210,153,1), rgb(255,210,153,1) 50%, #fff 50%);
+      background-image: linear-gradient(to right, #d93223, #d93223 50%, #000 50%);
       background-size: 200% 100%;
       background-position: -100%;
       transition: all 0.3s ease-in-out;
@@ -100,12 +100,12 @@
       bottom: -3px;
       z-index: 0;
       position: absolute;
-      background: var(--beige);
+      background: #d93223;
       transition: all 0.3s ease-in-out;
     }
     .nav_links li a:hover {
       background-position: 0%;
-      background-color: var(--beige); /* Beim Hoveren auf Beige ändern */
+      background-color: #d93223; /* Beim Hoveren auf Beige ändern */
   
     }
     .nav_links li a:hover:before {
@@ -113,7 +113,7 @@
     }
 
     .active {
-      color: var(--beige); /* Farbe für den aktiven Navigationspunkt */
+      color: #d93223; /* Farbe für den aktiven Navigationspunkt */
       border-bottom-style: solid;
       border-bottom-width: 2px;
   }
@@ -185,7 +185,7 @@
         top: 0;
         bottom: 0;
         width: 100vw; /* 100% der Viewport-Breite */
-        background-color:  #d93322; /* Gleiche Farbe wie das Hauptelement */
+        background-color:  #d93223; /* Gleiche Farbe wie das Hauptelement */
         z-index: -1; /* Hinter das Hauptelement legen */
     }
     
