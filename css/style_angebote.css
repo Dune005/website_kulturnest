@@ -1,16 +1,16 @@
 :root {
-  background-color: #242424;
-  --beige: rgba(255,210,153,1);
+  background-color: #F0E6DD;
+  --beige: rgb(63, 60, 55);
   --shadow-color: hsl(0deg 0% 0% / 0.5);
-  }
+ }
   
   *{
-      font-family: 'Lato', sans-serif;
-      font-weight:400;
-      font-size:16px;
-      color:white;
-    
-      text-decoration:none;
+    font-family: 'Lato', sans-serif;
+    font-weight:400;
+    font-size: 16px;
+    color:black;
+  
+    text-decoration:none;
     }
   
     html{ /*NICHT ANPASSEN!*/
@@ -169,13 +169,32 @@
       }
  
       .balken {
-        background-color: #fcd29b;
+        position: relative;
+        background-color: #d93322;
         display: flex;
-        width: 1000px;
-        height: 650px;
         align-items: center;
         justify-content: center;
-        padding: 20px; 
+        margin: 70px 0;
+        padding: 5px;
+    }
+    
+    .balken::before,
+    .balken::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100vw; /* 100% der Viewport-Breite */
+        background-color:  #d93322; /* Gleiche Farbe wie das Hauptelement */
+        z-index: -1; /* Hinter das Hauptelement legen */
+    }
+    
+    .balken::before {
+        left: 0;
+    }
+    
+    .balken::after {
+        right: 0;
     }
 
     .flex-container{
