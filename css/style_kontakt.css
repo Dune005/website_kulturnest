@@ -158,6 +158,99 @@
         margin-top: 10px;
         margin-bottom: 30px;
       }
+
+      /* Kontaktformular*/
+    
+    form {
+        width: 700px;
+        margin-top: 20px;
+    }
+    
+    label {
+        font-weight: bold;
+    }
+
+    input[type=anrede]{ /*anrede*/
+      width: 25%;
+      margin: 8px 0;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border-top:none;
+      border-left: none;
+      border-right: none;
+      border-bottom: dotted;
+      background-color: transparent;
+      box-shadow: none;
+  }
+
+    input[type=text]{ /*Name*/
+        width: 45%;
+        margin: 8px 0;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-top:none;
+        border-left: none;
+        border-right: none;
+        border-bottom: dotted;
+        background-color: transparent;
+        box-shadow: none;
+    }
+    .container {
+      margin-left: 22vw;
+      position: relative;
+      top: -67px
+      
+    }
+    input[type=vorname]{ /*Vorname*/
+      width: 100%;
+      margin: 8px 0;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border-top:none;
+      border-left: none;
+      border-right: none;
+      border-bottom: dotted;
+      background-color: transparent;
+      box-shadow: none;
+  }
+
+    input[type=email],
+    textarea {
+        width: 100%;
+        margin: 8px 0;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-top:none;
+        border-left: none;
+        border-right: none;
+        border-bottom: dotted;
+        background-color: transparent;
+        box-shadow: none;  
+    }
+
+    textarea {
+      width: 100%;
+      margin: 8px 0;
+      border-top:none;
+      border-left: none;
+      border-right: none;
+      border-bottom: dotted;
+      background-color: transparent;
+      box-shadow: none; 
+    }
+  
+    input[type=submit] {
+        background-color: #00a07e;
+        color: transparent;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 30%;
+    }
+   
+    /*------ Kontaktfomrular fertig -------*/
+
  .zentriert{
         display: flex;
         align-items: center; 

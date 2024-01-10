@@ -46,16 +46,30 @@
 <main>
 
     <div class="header-section">
-            <h1>Hier steht der Haupttitel</h1>
+            <h1>Hast du eine Frage?</h1>
     </div>
 
 
     <article>
         <div class="einleitung">
             <div>
-                <h2>Das ist der Zwischentitel</h2>
-                <p id="einleitung_text">Er hörte leise Schritte hinter sich. Das bedeutete nichts Gutes. Wer würde ihm schon folgen, spät in der Nacht und dazu noch in dieser engen Gasse mitten im übel beleumundeten Hafenviertel? Gerade jetzt, wo er das Ding seines Lebens gedreht hatte und mit der Beute verschwinden wollte! Hatte einer seiner zahllosen Kollegen dieselbe Idee gehabt, ihn beobachtet und abgewartet, um ihn nun um die Früchte seiner Arbeit zu erleichtern? Oder gehörten die Schritte hinter ihm zu einem der unzähligen Gesetzeshüter dieser Stadt, und die stählerne Acht um seine Handgelenke würde gleich zuschnappen?</p>
+                <h2>Dann schreib sie uns!</h2>
             </div>
+        <form action="/submit_contact_form">
+            <label for="fname">Anrede</label><br>
+            <input type="anrede" id="fname" name="fname" required><br>
+            <label for="fname">Name:</label><br>
+            <input type="text" id="fname" name="fname" required><br>
+        <div class="container">
+            <label for="fname">Vorname:</label><br>
+            <input type="vorname" id="fname" name="fname" required><br>
+        </div>
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="anliegen">Anliegen:</label><br>
+            <textarea id="anliegen" name="anliegen" rows="4" cols="50" required></textarea><br>
+            <input type="submit" value="Submit">
+            </form> 
         <img id="einleitung_bild" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1p6wF_Tn6WnSqDDTDqNpfrohQ46SeHWhnngygN2i23aJ415pOgMyX70MmZdqTIMsjndk&usqp=CAU" alt="">
         </div>
     </article>
