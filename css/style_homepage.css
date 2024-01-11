@@ -432,7 +432,7 @@ background-color: black;
     margin-left: -50vw;
     margin-right: -50vw;
     margin-bottom: 100px;
-    background-image: url(/img/flowers/flower_orange2.svg);
+    /* background-image: url(/img/flowers/flower_orange2.svg); */
     background-size: cover; /* Das Bild wird proportioniert und deckt den Teaser ab */
     background-repeat: no-repeat; /* Das Bild wird nicht wiederholt */
     background-position: center; /* Das Bild wird horizontal und vertikal zentriert */
@@ -497,7 +497,7 @@ background-color: black;
     width: 100%;
     height: auto;
     border-radius: 10px;
-    margin-bottom: 100px;
+
   }
   
   .button_header {
@@ -643,7 +643,7 @@ background-color: black;
     }
 
     .kulturnest-card {
-      flex-direction: column; /* Ändert die Anordnung der Elemente in eine Spalte */
+      flex-direction: row; /* Ändert die Anordnung der Elemente in eine Spalte */
       align-items: center; /* Zentriert die Elemente horizontal */
       text-align: center; /* Zentriert den Text horizontal */
     }
@@ -654,29 +654,46 @@ background-color: black;
   }
 
 
+  @media (max-width: 1500px) {
+
+    .kulturnest-card {
+      flex-direction: column; /* Ändert die Anordnung der Elemente in eine Spalte */
+      align-items: center; /* Zentriert die Elemente horizontal */
+      text-align: center; /* Zentriert den Text horizontal */
+    }
+
+  }
+
 
   @media (max-width: 1200px) {
+
+    html{
+      height:auto;
+      margin-left: 10vw;
+      margin-right: 10vw;
+    }
+
     .gleichgesinnte,
     .zugang,
     .bingo {
-      flex-direction: column; /* Ändert die Anordnung der Elemente in eine Spalte */
+      flex-direction: row; /* Ändert die Anordnung der Elemente in eine Spalte */
       align-items: flex-start; /* Linksbündige Ausrichtung der Elemente */
       margin-bottom: 150px;
     }
 
 
     .zugang {
-      flex-direction: column-reverse; /* Ändert die Anordnung der Elemente in eine Spalte und kehrt die Reihenfolge um */
+      flex-direction: row; /* Ändert die Anordnung der Elemente in eine Spalte und kehrt die Reihenfolge um */
       align-items: flex-start; /* Linksbündige Ausrichtung der Elemente */
       margin-bottom: 150px;
     }
     
     #zugang_text {
-      order: 2; /* Ändert die Reihenfolge des Textes auf 2 (nach dem Bild) */
+      order: 1; /* Ändert die Reihenfolge des Textes auf 2 (nach dem Bild) */
     }
     
     #zugang_bild {
-      order: 1; /* Ändert die Reihenfolge des Bildes auf 1 (vor dem Text) */
+      order: 2; /* Ändert die Reihenfolge des Bildes auf 1 (vor dem Text) */
     }
 
     h1{
@@ -694,6 +711,7 @@ background-color: black;
       text-align: center;
     
     }
+
 
   }
 
@@ -722,10 +740,23 @@ background-color: black;
       display: block;
     }
 
+    .gleichgesinnte,
+    .zugang,
+    .bingo {
+      flex-direction: column; /* Ändert die Anordnung der Elemente in eine Spalte */
+      align-items: flex-start; /* Linksbündige Ausrichtung der Elemente */
+      margin-bottom: 150px;
+    }
+
     #gleichgesinnte_bild, #bingo_artikel_bild, #zugang_bild {
       width: 100%; /* Die Breite auf 100% setzen, um den verfügbaren Platz auf kleinen Bildschirmen einzunehmen */
       margin: 0 auto; /* Das Bild horizontal zentrieren */
     }
+
+    .zugang {
+      flex-direction: column-reverse; /* Ändert die Anordnung der Elemente in eine Spalte und kehrt die Reihenfolge um */
+    }
+
 
     .nav_links li a {
       font-size: 20px;
@@ -758,6 +789,37 @@ background-color: black;
       font-size: 30px;
       font-weight: 800;
   }
+
+  #card_text {
+    color: #000000; /* Textfarbe auf Schwarz setzen */
+    background-color: transparent; /* Hintergrundfarbe des Textes auf transparent setzen */
+    position: relative; /* Position relativ setzen */
+    z-index: 1; /* Über dem Overlay platzieren */
+    max-width: 600px;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+  
+
+  .kulturnest-card h2 {
+    color: black;
+    font-size: 40px;
+  }
+
+  .kulturnest-card p{
+    color: black;
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  .kulturnest-card img {
+    width: 400px; /* Die Breite des Bildes */
+    height: auto; /* Die Höhe wird automatisch angepasst, um das Seitenverhältnis zu erhalten */
+    border-radius: 10px; /* Runde Ecken, wenn gewünscht */
+    display: block; /* Das Bild als Blockelement anzeigen */
+    margin: 0 auto; /* Das Bild horizontal zentrieren */
+  }
+
 
 }
 
@@ -813,4 +875,5 @@ background-color: black;
     text-align: left;
     line-height: 1.5; /* Beispielwert für die Zeilenhöhe, passe ihn nach Bedarf an */
   }  
+
 }
