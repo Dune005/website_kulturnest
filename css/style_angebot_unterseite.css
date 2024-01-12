@@ -42,6 +42,10 @@
       }
     
     
+      body {
+        width: 100%;
+        margin: 0; /* Entfernt den Standardrand des Browsers */
+    }
     
       .logo{ /*NICHT ANPASSEN!*/
         width: 500px;
@@ -76,7 +80,7 @@
         text-align: center;
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        background-image: linear-gradient(to right, rgb(255,210,153,1), rgb(255,210,153,1) 50%, #fff 50%);
+        background-image: linear-gradient(to right, #d93223, #d93223 50%, #000 50%);
         background-size: 200% 100%;
         background-position: -100%;
         transition: all 0.3s ease-in-out;
@@ -96,12 +100,12 @@
         bottom: -3px;
         z-index: 0;
         position: absolute;
-        background: var(--beige);
+        background: #d93223;
         transition: all 0.3s ease-in-out;
       }
       .nav_links li a:hover {
         background-position: 0%;
-        background-color: var(--beige); /* Beim Hoveren auf Beige ändern */
+        background-color: #d93223; /* Beim Hoveren auf Beige ändern */
     
       }
       .nav_links li a:hover:before {
@@ -109,7 +113,7 @@
       }
   
       .active {
-        color: var(--beige); /* Farbe für den aktiven Navigationspunkt */
+        color: #d93223; /* Farbe für den aktiven Navigationspunkt */
         border-bottom-style: solid;
         border-bottom-width: 2px;
     }
@@ -270,50 +274,195 @@
       }
   
        
-      
-        /*Footerbereich*/
-        footer {
-           display: flex;
-           width: 100%;
-           background-color: var(--blue);
-           color: white;
-           text-align: left;
-           font-size: 10px;
-           padding-top:10px;
-           padding-bottom:10px;
-           margin-top:10px;
-           border-top: 1px solid #ffffff; /* Dünne Linie mit der gewünschten Farbe (hier: #333) */
-           padding-bottom: 5px; /* Platz unterhalb der Linie */
-           margin-top: 40px;
-        }
-      
-        .adresse_footer{ /*NICHT ANPASSEN!*/
-          flex: 2;
-          font-size: 14px;
-        }
-      
-      
-        .weitere_links{ /*NICHT ANPASSEN!*/
-          flex: 3;
-          font-size: 14px;
-          text-align: left;
-          margin-top: 29px;
-        }
-      
-        .social_media_icons{ /*NICHT ANPASSEN!*/
-          flex: 2;
-          font-size: 10px;
-          margin-top: 20px;
-        }
-      
-        .social_media_icons img{ /*NICHT ANPASSEN!*/
-          width: 30px;
-        }
-  
-        .einleitung {
-          display: flex;
-          justify-content: space-between;
-          align-items: left;
-          margin-bottom: 20px;
-        }
-   
+/*Footerbereich*/
+.footer_content {
+  display: flex;
+  width: 100%;
+  color: white;
+  text-align: left;
+  font-size: 10px;
+  padding-top: 30px;
+  margin-top: 10px;
+  border-top: 1px solid #ffffff; /* Dünne Linie mit der gewünschten Farbe (hier: #333) */
+  padding-bottom: 5px; /* Platz unterhalb der Linie */
+  margin-top: 100px;
+  padding-bottom: 60px !important; /* Hinzufügen von !important */
+}
+
+.footer_adresse { /*NICHT ANPASSEN!*/
+  flex: 6;
+  font-size: 20px;
+  font-weight: 300;
+  margin-right: 20px;
+  line-height: 1.5; /* Beispielwert für die Zeilenhöhe, passe ihn nach Bedarf an */
+
+}
+
+.footer_adresse a { /*NICHT ANPASSEN!*/
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5; /* Beispielwert für die Zeilenhöhe, passe ihn nach Bedarf an */
+
+}
+
+.footer_logo {
+  flex: 6; /* Der .footer_logo-Bereich ist flexibel und passt sich an die verfügbare Breite an */
+  max-width: 100%; /* Die maximale Breite auf 100% setzen, um sicherzustellen, dass es nicht breiter als der Container wird */
+}
+
+.footer_logo img {
+  width: auto; /* Die Breite des Logos auf die native Breite festlegen */
+  height: auto; /* Die Höhe wird automatisch angepasst, um das Seitenverhältnis zu erhalten */
+  max-width: 70%; /* Optional: Die maximale Breite auf 100% setzen, um sicherzustellen, dass es nicht breiter als der Container wird */
+}
+
+.weitere_links{
+  flex: 4;
+}
+
+.weitere_links a {
+  font-size: 20px;
+  font-weight: 300;
+  text-align: left;
+  line-height: 1.5; /* Beispielwert für die Zeilenhöhe, passe ihn nach Bedarf an */
+}
+
+.weitere_links a:hover {
+  text-decoration: underline; /* Unterstreichen, wenn die Maus darüber schwebt */
+  color: var(--beige); /* Textfarbe beim Überfahren mit der Maus */
+}
+
+.social_media_icons-container {
+  display: flex;
+  flex: 3;
+  justify-content: flex-end; /* Icons am rechten Rand ausrichten */
+}
+
+.social_media_icons img { /*NICHT ANPASSEN!*/
+  width: 50px;
+
+} 
+
+
+
+@media (max-width: 1800px) {
+  .wrapper {
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: 1fr; /* Nur eine Spalte */
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center; /* Zentriert die Boxen horizontal */
+    margin-right: 0;
+    margin-bottom: 5%;
+  }
+
+  .box {
+    width: 100%; /* Boxen nehmen die volle Breite ein */
+    margin: 10px 0; /* Fügt oben und unten einen Abstand hinzu */
+  }
+
+}
+
+
+@media (max-width: 1200px) {
+
+  html{
+    height:auto;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+
+  h1{
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 800px) {
+
+  html{
+    height:auto;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  h1{
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 0px;
+  }
+
+  .logo {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .nav_links li a {
+    font-size: 20px;
+  }
+
+}
+
+/* Footer Bereich!!!!! */
+
+@media (max-width: 1100px) {
+
+  .footer_logo {
+    display: none;
+  }
+
+  .social_media_icons {
+    display: flex;
+    flex: 3;
+    justify-content: flex-end;
+    flex-direction: column; /* Icons untereinander anordnen */
+    align-items: flex-end; /* Icons rechts ausrichten */
+  }
+
+  .social_media_icons img {
+    width: 35px; /* Ändere die Breite nach deinen Wünschen */
+    height: auto; /* Die Höhe wird automatisch angepasst, um das Seitenverhältnis zu erhalten */
+  }
+
+}
+
+@media (max-width: 800px) {
+
+
+.footer_logo {
+  display: none;
+}
+
+.footer_adresse { /*NICHT ANPASSEN!*/
+  flex: 6;
+  font-size: 15px;
+  font-weight: 300;
+  margin-right: 20px;
+  line-height: 1.5; /* Beispielwert für die Zeilenhöhe, passe ihn nach Bedarf an */
+
+}
+
+.footer_adresse a { /*NICHT ANPASSEN!*/
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.5; /* Beispielwert für die Zeilenhöhe, passe ihn nach Bedarf an */
+
+}
+
+.weitere_links a {
+  font-size: 15px;
+  font-weight: 300;
+  text-align: left;
+  line-height: 1.5; /* Beispielwert für die Zeilenhöhe, passe ihn nach Bedarf an */
+}  
+
+}
