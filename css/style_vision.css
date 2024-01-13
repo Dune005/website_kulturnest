@@ -15,13 +15,10 @@
   
     html{ /*NICHT ANPASSEN!*/
       height:auto;
-      margin-left: 20vw;
-      margin-right: 20vw;
       background-image: url('/img/voegel/vogel_weiss_transparent_60.png');
       background-size: contain; /* Das Bild wird gestreckt, um den gesamten Bildschirm zu bedecken */
       background-repeat: no-repeat; /* Das Bild wird nicht wiederholt */
       background-attachment: fixed; /* Das Bild bleibt statisch */
-      height: 100%;
   
     }
 
@@ -124,8 +121,8 @@
       text-align: center;
       margin-top: 50px;
       margin-bottom: 20px;
-      /* margin-left: 20vw;
-      margin-right: 20vw; */
+      margin-left: 20vw;
+      margin-right: 20vw;
      }
 
      .lead_header{
@@ -187,7 +184,6 @@
 
      .balken {
         background-color: #F1952F;
-        border-radius: 10px;
         display: flex;
         width: 100vw;
         height: 650px;
@@ -199,7 +195,7 @@
     .video_kulturnest {
       width: calc(100% - 40px);
       height: calc(100% - 40px); 
-      max-width: 100%; 
+      max-width: 70%; 
       max-height: 100%; 
       margin: auto; 
       display: block;
@@ -208,7 +204,6 @@
 
     .balken2 {
       background-color: #FFE1AC;
-      border-radius: 10px;
       display: flex;
       width: 100vw;
       height: 320px;
@@ -217,10 +212,10 @@
     }
   
     .flex-item-breit{
-    max-width: 100%;
-    width: 850px;
+    max-width:;
     margin-top: 20px;
     margin-left: 20vw;
+    margin-right: 20vw;
     color: black;
     align-items: center;
     justify-content: center;
@@ -333,13 +328,13 @@
 /*Footerbereich*/
 .footer_content {
   display: flex;
-  width: 100%;
-  color: white;
+  margin-left: 20vw;
+  margin-right: 20vw;
   text-align: left;
   font-size: 10px;
   padding-top: 30px;
   margin-top: 10px;
-  border-top: 1px solid #ffffff; /* Dünne Linie mit der gewünschten Farbe (hier: #333) */
+  border-top: 1px solid black; /* Dünne Linie mit der gewünschten Farbe (hier: #333) */
   padding-bottom: 5px; /* Platz unterhalb der Linie */
   margin-top: 100px;
   padding-bottom: 60px !important; /* Hinzufügen von !important */
