@@ -359,6 +359,7 @@
   padding-bottom: 5px; /* Platz unterhalb der Linie */
   margin-top: 100px;
   padding-bottom: 60px !important; /* Hinzufügen von !important */
+  margin-right: 20vw;
 }
 
 .footer_adresse { /*NICHT ANPASSEN!*/
@@ -462,11 +463,7 @@
     margin-right: 20px;
   }
 
-  html{
-    height:auto;
-    margin-left: 10vw;
-    margin-right: 10vw;
-  }
+
 }
 
 
