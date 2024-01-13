@@ -78,7 +78,7 @@
         text-align: center;
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        background-image: linear-gradient(to right, #00a07e, #00a07e 50%, #000 50%);
+        background-image: linear-gradient(to right, black, black 50%, #000 50%);
         background-size: 200% 100%;
         background-position: -100%;
         transition: all 0.3s ease-in-out;
@@ -97,7 +97,7 @@
         bottom: -3px;
         z-index: 0;
         position: absolute;
-        background: #00a07e;
+        background: black;
         transition: all 0.3s ease-in-out;
       }
       .nav_links li a:hover {
@@ -110,7 +110,7 @@
       }
   
       .active {
-        color: #00a07e; /* Farbe für den aktiven Navigationspunkt */
+        color: black; /* Farbe für den aktiven Navigationspunkt */
         border-bottom-style: solid;
         border-bottom-width: 2px;
     }
