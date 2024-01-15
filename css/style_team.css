@@ -210,10 +210,9 @@
       margin-top:20px;
       margin-bottom: 20px;
       width: 100vw;
-      margin-left: 18vw;
       display: flex;
       height: 700px;
-      justify-content: left;
+      justify-content: center;
       align-items: center;
      
     }

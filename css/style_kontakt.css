@@ -171,58 +171,59 @@
         font-weight: bold;
     }
 
-    input[type=anrede]{ /*anrede*/
+    .contact-anrede{ /*anrede*/
       width: 25%;
-      margin: 8px 0;
-      padding-top: 5px;
-      padding-bottom: 5px;
-      border-color: rgba(0, 0, 0, 0.334);
-      background-color: transparent;
-      box-shadow: none;
+      
   }
 
-    input[type=text]{ /*Name*/
-        width: 45%;
-        margin: 8px 0;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        border-color: rgba(0, 0, 0, 0.334);;
-        background-color: transparent;
-        box-shadow: none;
+    .contact-sirname{ /*Name*/
+        width: calc(100% /2);
+        
     }
-    .container {
-      margin-left: 22vw;
-      position: relative;
-      top: -67px
+    .field{
+      display: flex;
+      flex-direction: column;
+    }
+    .contact-name{ /*Vorname*/
+      width: calc(100% /2);
       
-    }
-    input[type=vorname]{ /*Vorname*/
-      width: 100%;
-      margin: 8px 0;
+  }
+  .contact-input{
+    margin: 8px 0;
       padding-top: 5px;
       padding-bottom: 5px;
       border-color: rgba(0, 0, 0, 0.334);;
       background-color: transparent;
       box-shadow: none;
+      width: 100%;
+  }
+  .field.contact-anrede select {
+    margin: 8px 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-color: rgba(0, 0, 0, 0.334);
+    background-color: transparent;
+    box-shadow: none;
+    width: 100%;
+}
+  .name-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    
+
   }
 
     input[type=email],
     textarea {
         width: 100%;
-        margin: 8px 0;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        border-color: rgba(0, 0, 0, 0.334);;
-        background-color: transparent;
-        box-shadow: none;  
+         
     }
 
     textarea {
       width: 100%;
-      margin: 8px 0;
-      border-color: rgba(0, 0, 0, 0.334);;
-      background-color: transparent;
-      box-shadow: none; 
+       
     }
   
     input[type=submit] {
@@ -425,6 +426,10 @@
 
 @media (max-width: 800px) {
 
+main{
+  width: 100vw;
+  height: 100%;
+}
 
 .footer_logo {
   display: none;

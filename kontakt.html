@@ -59,22 +59,44 @@
                 die kulturnest noch bunter und vielfältiger machen!"
             </div>
         <form action="/submit_contact_form">
-            <label for="fname">Anrede</label><br>
-            <input type="anrede" id="fname" name="fname" required><br>
-            <label for="fname">Name:</label><br>
-            <input type="text" id="fname" name="fname" required><br>
-        <div class="container">
-            <label for="fname">Vorname:</label><br>
-            <input type="vorname" id="fname" name="fname" required><br>
+            <div class="field contact-anrede">
+                <label for="fname">Anrede</label>
+                <select contact-input id="anrede" name="cars">
+                    <option value="Male">Herr</option>
+                    <option value="Female">Frau</option>
+                    <option value="divers">Divers</option>
+                    <option value="dontSay">Möchte ich nicht sagen</option>
+                    
+                  </select>
+            </div>
+        <div class="name-container">    
+        <div class="field contact-sirname">
+            <label for="fname">Name:</label>
+            <input class="contact-input" type="text" id="fname" name="fname" required>
         </div>
-            <label for="email">E-mail:</label><br>
-            <input type="email" id="email" name="email" required><br>
-            <label for="anliegen">Anliegen:</label><br>
-            <textarea id="anliegen" name="anliegen" required></textarea><br>
+            
+        <div class="field contact-name">
+            <label for="fname">Vorname:</label>
+            <input class="contact-input" type="vorname" id="fname" name="fname" required>
+        </div>
+    </div>
+        <div class="field contact-email">
+            <label for="email">E-mail:</label>
+            <input class="contact-input" type="email" id="email" name="email" required>
+        </div>
+            
+        <div class="field contact-anliegen">
+            <label for="anliegen">Anliegen:</label>
+            <textarea class="contact-input" id="anliegen" name="anliegen" required></textarea>
+        </div>    
+        
+        <div class="contact-checkbox">
             <label>
                 <input type="checkbox" name="nda">
                 Ich habe die Datenschutzerklärung gelesen und bin einverstanden.
-              </label><br>
+              </label>
+        </div>
+        
             <input type="submit" value="Submit">
             </form> 
 

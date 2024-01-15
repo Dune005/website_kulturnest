@@ -253,10 +253,15 @@
     }
 
     .kulturnest{
-      width: 425px;
+      width: 100%;
     }
 
+    .visionsbeschrieb-text{
+      width: 100%;
+      max-width: calc(100% / 2);
+    }
     .visionsbeschrieb{
+    width: 100%;
       display: flex;
       gap: 50px;
       flex-direction: row;
