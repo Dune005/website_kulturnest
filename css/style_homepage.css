@@ -555,10 +555,10 @@ background-color: black;
   font-size: 10px;
   padding-top: 30px;
   margin-top: 10px;
-  border-top: 1px solid #ffffff; /* Dünne Linie mit der gewünschten Farbe */
+  border-top: 1px solid #ffffff; /* Dünne Linie mit der gewünschten Farbe (hier: #333) */
   padding-bottom: 5px; /* Platz unterhalb der Linie */
   margin-top: 100px;
-  padding-bottom: 60px !important;
+  padding-bottom: 60px !important; /* Hinzufügen von !important */
 }
 
 .footer_adresse { /*NICHT ANPASSEN!*/
