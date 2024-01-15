@@ -170,24 +170,24 @@
       }
 
       /* Style for the text container */
-      .einleitung div {
+      .einleitung_angebote div {
         max-width: 60%; /* Adjust as needed */
       }
       
       /* Style for the image */
-      .einleitung img {
+      .einleitung_angebote img {
         max-width: 100%; /* Adjust as needed */
         box-shadow: none; /* Initial box-shadow */
         transition: box-shadow 0.3s ease, transform 0.3s ease; /* Transition for box-shadow and transform */
       }
       
       /* Hover effect for the image */
-      .einleitung img:hover {
-        box-shadow: 0 0 10px --shadow-color; /* Shadow effect on hover */
+      .einleitung_angebote img:hover {
+        box-shadow: 0 0 10px var(--shadow-color); /* Shadow effect on hover */
         transform: scale(1.05); /* Slight increase in size on hover */
       }
       
-      .einleitung {
+      .einleitung_angebote {
         display: flex;
         flex-direction: row; /* Ändert die Anordnung der Elemente in eine Zeile */
         align-items: flex-start; /* Linksbündige Ausrichtung der Elemente */
@@ -195,7 +195,7 @@
         margin-top: 100px;
     }
     
-    #einleitung_bild {
+    .einleitung_bild {
         flex: unset; /* Auf 'unset' setzen, um das vorherige Flex-Verhalten aufzuheben */
         margin-right: 20px;
         width: 400px;
@@ -213,7 +213,7 @@
         font-weight: bold;
     }
     
-    #einleitung_text p {
+    .einleitung_text_beschreibung p {
         font-size: 16px;
     }
      /*Button*/
@@ -385,6 +385,14 @@
         margin-top: 50px;
         margin-bottom: 0px;
       }
+
+      .einleitung_angebote {
+        display: flex;
+        flex-direction: column; /* Ändert die Anordnung der Elemente in eine Zeile */
+        align-items: center; /* Linksbündige Ausrichtung der Elemente */
+        margin-bottom: 150px;
+        margin-top: 100px;
+    }
   
   
     }

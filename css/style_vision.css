@@ -98,6 +98,7 @@
       background: #F1952F;
       transition: all 0.3s ease-in-out;
     }
+
     .nav_links li a:hover {
       background-position: 0%;
       background-color: #F1952F; /* Beim Hoveren auf Beige ändern */
@@ -260,6 +261,7 @@
       width: 100%;
       max-width: calc(100% / 2);
     }
+    
     .visionsbeschrieb{
     width: 100%;
       display: flex;
@@ -421,11 +423,7 @@
 
 @media (max-width: 1200px) {
 
-  html{
-    height:auto;
-    margin-left: 10vw;
-    margin-right: 10vw;
-  }
+
 
   h1{
     font-size: 50px;
@@ -434,6 +432,26 @@
     margin-top: 50px;
     margin-bottom: 0px;
   }
+
+  /* .flex-container {
+    width: 100%;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+
+  .visionsbeschrieb{
+
+    max-width: 700px;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+
+    }
+
+    .visionsbeschrieb-text{
+      width: 100%;
+      max-width: calc(100% / 1);
+    } */
 
 
 }
