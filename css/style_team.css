@@ -491,7 +491,7 @@
   .balken{
     flex-direction: column;
     justify-content: center;
-    width: auto;
+    width: 100vw;
     height: auto;
   }
 
@@ -506,15 +506,17 @@
   .balken2{
     flex-direction: column;
     justify-content: center;
-    width: auto;
+    width: 100vw;
     height: auto;
   }
 
   .flex-item_text_left{
-    order:2;
+    order:1;
     width: auto;
     height: auto;
     flex-direction: column;
+    justify-content: center;
+    margin: auto;
   }
 
   .flex-item_picture_right{
@@ -523,6 +525,14 @@
     height: auto;
     justify-content: center;
     margin: 20px;
+  }
+
+  .flex-item_text_right{
+    order:1;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .flex-container2{
@@ -625,5 +635,4 @@
 }  
 
 
-}
 }
