@@ -747,10 +747,11 @@ justify-content: center;
   }
   .nest-text{
     position: relative;
-    top: -245px; /* px anzahl so verändern sodass der erste text im kreis mittig ist */
-    left: 0px;
+    top: -240px; /* px anzahl so verändern sodass der erste text im kreis mittig ist */
+    left: 20px;
     text-align: center;
     padding: 30px;
+    width: 20vw
   }
  
   .team{
@@ -906,6 +907,8 @@ justify-content: center;
       display: flex;
       flex-direction: row;
     }
+
+
     .nest{
       margin-top: 0px;
       margin-bottom: 20px;
@@ -927,10 +930,11 @@ justify-content: center;
   }
   .nest-text{
     position: relative;
-    top: -245px; /* px anzahl so verändern sodass der erste text im kreis mittig ist */
-    left: 0px;
+    top: -240px; /* px anzahl so verändern sodass der erste text im kreis mittig ist */
+    left: 20px;
     text-align: center;
     padding: 30px;
+    width: 20vw;
   }
  
   .team{
@@ -968,33 +972,187 @@ justify-content: center;
 
 @media (max-width: 800px) {
 
-  html{
-    height:auto;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
   h1{
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 800;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 0px;
   }
 
-  .logo {
-    max-width: 500px;
-    width: 100%;
-    height: auto;
-    padding-top: 20px;
-    margin: 0 auto;
-    display: block;
+  .zentriert{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
   }
 
-  .nav_links li a {
+  .einleitung {
+    display: flex;
+    flex-direction: column; /* Ändert die Anordnung der Elemente in eine Spalte */
+    align-items: flex-start; /* Linksbündige Ausrichtung der Elemente */
+  }
+
+
+  #einleitung_textx{
+    flex: 1;
+    align-items: center;
+  }
+
+ .balken {
+    background-color: #F1952F;
+    display: flex;
+    width: 100vw;
+    height: 650px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.video_kulturnest {
+  width: calc(100% - 40px);
+  height: calc(100% - 40px); 
+  max-width: 70%; 
+  max-height: 100%; 
+  margin: auto; 
+  display: block;
+  border-radius: 10px;
+  border: 0px;
+}
+
+.balken2 {
+  background-color: #FFE1AC;
+  display: flex;
+  width: 100vw;
+  height: 320px;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.flex-item-breit{
+margin-top: 20px;
+margin-left: 20vw;
+margin-right: 20vw;
+color: black;
+align-items: center;
+justify-content: center;
+}
+
+.flex-container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20vw;
+  margin-left: 20vw;
+  margin-top: 40px;
+}
+
+.lead{
+  font-size: 16px;
+  font-weight: 750px;
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.text{
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.vision{
+  width: 200%;
+}
+
+.kulturnest{
+  width: 200%;
+}
+
+.flex-item{
+  width: 100%;
+  max-width: calc(100% / 2);
+}
+
+.visionsbeschrieb-text{
+width: auto;
+justify-content: center;
+}
+
+.visionsbeschrieb{
+  flex-direction: column;
+
+}
+    .nest-container{
+      display: flex;
+      flex-direction: row;
+    }
+
+
+    .nest{
+      margin-top: 0px;
+      margin-bottom: 20px;
+      height: 300px; /* schachtel mit kreis und text vergrössert */
+      
+    }
+    .nest:last-child{ /* unterer kreis */
+      position: relative;
+      left: -100px;
+      top: 170px;
+    }
+    .nest_bild{
+      position: relative;
+      top: 0px;
+      left: 20px;
+      width: 270px;  /* kreis vergrössert */
+      height: auto;
+
+  }
+  .nest-text{
+    position: relative;
+    top: -240px; /* px anzahl so verändern sodass der erste text im kreis mittig ist */
+    left: 20px;
+    text-align: center;
+    padding: 30px;
+    width: auto;
+  }
+ 
+  .team{
     font-size: 20px;
+    font-weight: 800;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    color: black;
+  }
+ 
+  .lead-team{
+    font-size: 16px;
+    font-weight: 750px;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    color: black;
   }
 
+  .text-team{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: black;
+  }
+
+  .hier{
+    color: black;
+  }
+
+  
 }
 
 
