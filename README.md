@@ -49,10 +49,10 @@ Unsere Website umfasst folgende Seiten:
 ## Projektverwaltung und Beitragende
 Das Projekt wird von einem engagierten Team geleitet:
 
-**Nadja Siegrist:** Co-Founderin, zuständig für audiovisuelles Erzählen. <a href="https://github.com/nadjs-1702">@nadja-1702</a>
-**Claudio Riz:** Co-Founder, spezialisiert auf Visualisierung. <a href="https://github.com/Dune005">@Dune005</a>
-**Julia Moos:** Co-Founderin, verantwortlich für Schreiben und Sprechen in der Corporate Communication. <a href="https://github.com/juliaflurina">@juliaflurina</a>
-**Max Pünter:** Co-Founder, zuständig für interaktive Medien. <a href="https://github.com/maxxoskarr">@Dmaxxoskarr</a>
+- **Nadja Siegrist:** Co-Founderin, zuständig für audiovisuelles Erzählen. <a href="https://github.com/nadjs-1702">@nadja-1702</a> <br>
+- **Claudio Riz:** Co-Founder, spezialisiert auf Visualisierung. <a href="https://github.com/Dune005">@Dune005</a> <br>
+- **Julia Moos:** Co-Founderin, verantwortlich für Schreiben und Sprechen in der Corporate Communication. <a href="https://github.com/juliaflurina">@juliaflurina</a> <br>
+- **Max Pünter:** Co-Founder, zuständig für interaktive Medien. <a href="https://github.com/maxxoskarr">@Dmaxxoskarr</a>
 
 ## Hilfsmittel
 Folgende Hilfsmittel wurden verwendet:
