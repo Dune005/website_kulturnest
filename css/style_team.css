@@ -348,7 +348,6 @@
 /*Footerbereich*/
 .footer_content {
   display: flex;
-  width: 100%;
   color: white;
   text-align: left;
   font-size: 10px;
@@ -359,6 +358,7 @@
   margin-top: 100px;
   padding-bottom: 60px !important; /* Hinzufügen von !important */
   margin-right: 20vw;
+  margin-left: 20vw;
 }
 
 .footer_adresse { /*NICHT ANPASSEN!*/
