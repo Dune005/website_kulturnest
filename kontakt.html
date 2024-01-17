@@ -58,59 +58,60 @@
                 – wir sind hier, um zuzuhören und zu unterstützen. Wir freuen uns auf Deine Nachrichten und Ideen, 
                 die kulturnest noch bunter und vielfältiger machen!"
             </div>
-        <form action="/submit_contact_form">
-            <div class="field contact-anrede">
-                <label for="fname">Anrede</label>
-                <select contact-input id="anrede" name="cars">
-                    <option value="Male">Herr</option>
-                    <option value="Female">Frau</option>
-                    <option value="divers">Divers</option>
-                    <option value="dontSay">Möchte ich nicht sagen</option>
+            <form action="/submit_contact_form">
+                <div class="field contact-anrede">
+                    <label for="anrede">Anrede</label>
+                    <select id="anrede" name="anrede">
+                        <option value="Male">Herr</option>
+                        <option value="Female">Frau</option>
+                        <option value="divers">Divers</option>
+                        <option value="dontSay">Möchte ich nicht sagen</option>
+                    </select>
+                </div>
+                <div class="name-container">    
+                    <div class="field contact-sirname">
+                        <label for="Nachname">Nachname</label>
+                        <input class="contact-input" type="text" id="Nachname" name="Nachname" required>
+                    </div>
                     
-                  </select>
-            </div>
-        <div class="name-container">    
-        <div class="field contact-sirname">
-            <label for="fname">Name:</label>
-            <input class="contact-input" type="text" id="fname" name="fname" required>
-        </div>
+                    <div class="field contact-name">
+                        <label for="Vorname">Vorname</label>
+                        <input class="contact-input" type="text" id="Vorname" name="Vorname" required>
+                    </div>
+                </div>
+                <div class="field contact-email">
+                    <label for="email">E-Mailadresse</label>
+                    <input class="contact-input" type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="field contact-anliegen">
+                    <label for="deine_nachricht">Deine Nachricht</label>
+                    <textarea class="contact-input" id="deine_nachricht" name="deine_nachricht" required></textarea>
+                </div>    
+                
+                <div class="contact-checkbox">
+                    <label>
+                        <input type="checkbox" name="nda">
+                        Ich habe die Datenschutzerklärung gelesen und bin einverstanden.
+                    </label>
+                </div>
             
-        <div class="field contact-name">
-            <label for="fname">Vorname:</label>
-            <input class="contact-input" type="vorname" id="fname" name="fname" required>
-        </div>
-    </div>
-        <div class="field contact-email">
-            <label for="email">E-mail:</label>
-            <input class="contact-input" type="email" id="email" name="email" required>
-        </div>
-            
-        <div class="field contact-anliegen">
-            <label for="anliegen">Anliegen:</label>
-            <textarea class="contact-input" id="anliegen" name="anliegen" required></textarea>
-        </div>    
-        
-        <div class="contact-checkbox">
-            <label>
-                <input type="checkbox" name="nda">
-                Ich habe die Datenschutzerklärung gelesen und bin einverstanden.
-              </label>
-        </div>
-        
-            <input type="submit" value="Submit">
+                <input type="submit" value="Submit">
             </form> 
+    
+            <div class="flex_container">
+                <div class="flex_item">
+                    <h2>Kulturnest</h2>
+                    Sommeraustrasse 32<br>
+                    7000 Chur<br>
+                    <img class="img2" src="img/Maps_kulturnest.jpg" alt="Karte Location">
+                </div>   
+            </div>
+        </div>
+    </article>
+    
 
-    <div class="flex_container">
-        <div class="flex_item">
-        <h2>Kulturnest</h2>
-            Sommeraustrasse 32<br>
-            7000 Chur<br>
-            <img class="img2" src="img/Maps_kulturnest.jpg" alt="Karte Location">
-        </div>   
 
-    </div>
-
-</div>
 </main>
 
 <!--HIER ENDET DER INHALT DER SEITE-->
