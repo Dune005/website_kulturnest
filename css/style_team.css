@@ -189,7 +189,6 @@
 
     .flex-item_text_right{
       width: 100vw;
-      margin-right: 5vw;
       display: flex;
       justify-content: center;
     }
@@ -455,6 +454,68 @@
     margin-right: 20px;
   }
 
+  .flex-container{
+    flex-direction: column;
+  }
+
+  .balken{
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: auto;
+  }
+
+  .flex-item_picture_left{
+    order:2;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    margin: 20px;
+    margin-bottom: 50px;
+  }
+ 
+  .balken2{
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: auto;
+  }
+
+  .flex-item_text_left{
+    order:1;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    margin-top: 100px;
+  }
+
+  .flex-item_picture_right{
+    order:2;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    margin: 20px;
+    margin-bottom: 50px;
+  }
+
+  .flex-item_text_right{
+    order:1;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 70px;
+  }
+
+  .flex-container2{
+    flex-direction: column;
+  }
+
+  .flex-container{
+    flex-direction: column;
+  }
   
 }
 
@@ -580,12 +641,101 @@
     font-size: 20px;
   }
 
+  .flex-container{
+    flex-direction: column;
+  }
+
+  .balken{
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: auto;
+  }
+
+  .text_right{
+    align-items: center;
+  }
+
+  .flex-item_picture_left{
+    order:2;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    margin: 20px;
+    margin-bottom: 50px;
+  }
+ 
+  .balken2{
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: auto;
+  }
+
+  .flex-item_text_left{
+    order:1;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    margin-top: 100px;
+  }
+
+  .flex-item_picture_right{
+    order:2;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    margin: 20px;
+    margin-bottom: 50px;
+  }
+
+  .flex-item_text_right{
+    order:1;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 70px;
+    margin-right: 0;
+  }
+
+  .flex-container2{
+    flex-direction: column;
+  }
+
+  .flex-container{
+    flex-direction: column;
+  }
+
 }
 
 
 
 
 /* Footer Bereich!!!!! */
+
+@media (max-width: 1800px) {
+
+  .footer_logo {
+    display: none;
+  }
+
+  .social_media_icons {
+    display: flex;
+    flex: 3;
+    justify-content: flex-end;
+    flex-direction: column; /* Icons untereinander anordnen */
+    align-items: flex-end; /* Icons rechts ausrichten */
+  }
+
+  .social_media_icons img {
+    width: 35px; /* Ändere die Breite nach deinen Wünschen */
+    height: auto; /* Die Höhe wird automatisch angepasst, um das Seitenverhältnis zu erhalten */
+  }
+
+}
 
 @media (max-width: 1100px) {
 
@@ -637,6 +787,5 @@
   text-align: left;
   line-height: 1.5; /* Beispielwert für die Zeilenhöhe, passe ihn nach Bedarf an */
 }  
-
 
 }
