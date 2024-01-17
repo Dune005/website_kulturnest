@@ -159,12 +159,6 @@
       margin-bottom: 30px;
     }
 
- .zentriert{
-        display: flex;
-        align-items: center; 
-        justify-content: left;
-      }
-
       .einleitung {
         display: flex;
         flex-direction: column; /* Ändert die Anordnung der Elemente in eine Spalte */
@@ -185,7 +179,7 @@
     }
 
     .flex-item_picture_left{
-      margin: 20px;
+      margin: 40px;
       width: 100vw;
       display: flex;
       margin-right: 100px;
@@ -201,14 +195,15 @@
     }
      
     .flex-item_picture_right{
-      margin: 20px;
+      margin: 40px;
       display: flex;
-      margin-left: 100px;
+      margin-left: auto;
     }
 
     .flex-item_text_left{
       margin-top:20px;
       margin-bottom: 20px;
+      margin-left: 100px;
       width: 100vw;
       display: flex;
       height: 700px;
@@ -280,9 +275,8 @@
     
     .balken {
       background-color: #98b2cd;
-      border-radius: 10px;
       display: flex;
-      width: 90vw;
+      width: 100vw;
       height: 600px;
       align-items: center;
       justify-content:left;
@@ -290,9 +284,8 @@
 
   .balken2 {
     background-color: #2F7CC0;
-    border-radius: 10px;
     display: flex;
-    width: 90vw;
+    width: 100vw;
     height: 600px;
     align-items: center;
     justify-content:left;
@@ -462,7 +455,7 @@
     margin-right: 20px;
   }
 
-
+  
 }
 
 
@@ -491,6 +484,54 @@
     margin-right: 20px;
   }
 
+  .flex-container{
+    flex-direction: column;
+  }
+
+  .balken{
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    height: auto;
+  }
+
+  .flex-item_picture_left{
+    order:2;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    margin: 20px;
+  }
+ 
+  .balken2{
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    height: auto;
+  }
+
+  .flex-item_text_left{
+    order:2;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .flex-item_picture_right{
+    order:2;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    margin: 20px;
+  }
+
+  .flex-container2{
+    flex-direction: column;
+  }
+
+  .flex-container{
+    flex-direction: column;
+  }
 
 }
 
@@ -584,4 +625,5 @@
 }  
 
 
+}
 }
