@@ -501,6 +501,7 @@
     height: auto;
     justify-content: center;
     margin: 20px;
+    margin-bottom: 50px;
   }
  
   .balken2{
@@ -517,6 +518,7 @@
     flex-direction: column;
     justify-content: center;
     margin: auto;
+    margin-top: 100px;
   }
 
   .flex-item_picture_right{
@@ -525,6 +527,7 @@
     height: auto;
     justify-content: center;
     margin: 20px;
+    margin-bottom: 50px;
   }
 
   .flex-item_text_right{
@@ -533,6 +536,7 @@
     height: auto;
     flex-direction: column;
     justify-content: center;
+    margin-top: 70px;
   }
 
   .flex-container2{
