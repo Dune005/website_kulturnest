@@ -303,7 +303,7 @@
     transform: translateY(0);
   }
    
-    /*------ Kontaktfomrular fertig -------*/
+    /*------ Kontaktformular fertig -------*/
      
     .flex_container{
       display: flex;
@@ -314,13 +314,6 @@
       margin-bottom: 50px;
 
     } 
-
-    .img2 img{
-      width: 60%;
-      height: auto;
-      margin-top: 50px;
-      margin-bottom: 50px;
-    }
 
   /*Footerbereich*/
   .footer_content {
@@ -519,12 +512,6 @@ width: 100%;
   width: 100%; 
 }
 
-.img2 img{
-  width: 100%;
-  height: auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
 
 
 }
