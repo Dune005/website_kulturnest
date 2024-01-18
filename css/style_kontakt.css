@@ -315,6 +315,10 @@
 
     } 
 
+    .google_map {
+      width: 100%;
+    }
+
   /*Footerbereich*/
   .footer_content {
     display: flex;

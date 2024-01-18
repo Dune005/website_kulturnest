@@ -251,7 +251,7 @@
 
     .text_right_name{
       font-size: 22px;
-      font-weight: 750px;
+      font-weight: 700;
       text-align: left;
       margin-top: 20px;
       margin-bottom: 0px;
@@ -264,7 +264,7 @@
    
     .text_right_normal{
       font-size: 16px;
-      font-weight: 750px;
+      font-weight: 700;
       text-align: left;
 
       margin-bottom: 0px;
@@ -309,7 +309,7 @@
 
   .text_left_name{
     font-size: 22px;
-    font-weight: 750px;
+    font-weight: 700;
     text-align: left;
     margin-top: 20px;
     margin-bottom: 0px;
@@ -322,7 +322,7 @@
 
   .text_left_normal{
     font-size: 16px;
-    font-weight: 750px;
+    font-weight: 700;
     text-align: left;
     margin-top: 20px;
     margin-bottom: 0px;

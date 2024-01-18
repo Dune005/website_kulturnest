@@ -195,7 +195,7 @@
             }
                 .lead{
                   font-size: 16px;
-                  font-weight: 750px;
+                  font-weight: 700;
                   text-align: left;
                   margin-top: 20px;
                   margin-bottom: 0px;
@@ -252,7 +252,7 @@
           #einleitung_bild{
             width: 500px;
             height: auto;
-            margin: 20 30 20 30
+            margin: 20px 30px 20px 0px;
           }
     
     
