@@ -980,6 +980,15 @@ justify-content: center;
     margin-bottom: 0px;
   }
 
+  .logo {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    margin: 0 auto;
+    display: block;
+  }
+
   .zentriert{
     display: flex;
     align-items: center; 
@@ -1285,7 +1294,7 @@ justify-content: center;
     .nest{
       margin-top: 0px;
       margin-bottom: 20px;
-      height: 300px; /* schachtel mit kreis und text vergrössert */
+      height: 100px; /* schachtel mit kreis und text vergrössert */
       
     }
     .nest:last-child{ /* unterer kreis */
@@ -1297,7 +1306,7 @@ justify-content: center;
       position: relative;
       top: 0px;
       left: 20px;
-      width: 270px;  /* kreis vergrössert */
+      width: 230px;  /* kreis vergrössert */
       height: auto;
 
   }
